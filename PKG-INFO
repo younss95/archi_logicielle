@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: archilog
+Version: 0.1
+Summary: A simple project for educational purpose.
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: click>=8.1.7
+Description-Content-Type: text/markdown
+
+# archilog
+
+A simple project for educational purpose.
+
+```bash
+$ pdm run archilog
+Usage: archilog [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  create
+  delete
+  get
+  get-all
+  import-csv
+  init-db
+  update
+```
+
+Course & examples : [https://kathode.neocities.org](https://kathode.neocities.org)
