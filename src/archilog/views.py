@@ -1,10 +1,11 @@
 import click
-import uuid
+import csv
 
 import archilog.models as models
 import archilog.services as services
 
 from tabulate import tabulate
+from flask import render_template, Flask
 
 
 @click.group()
@@ -31,18 +32,10 @@ def create(name: str, amount: float, category: str | None):
 
 
 @cli.command()
-@click.option("--id", required=True, type=click.UUID)
-def get(id: uuid.UUID):
+@click.option("--id", required=True, type=int)
+def get(id: int):
     click.echo(models.get_entry(id))
 
-
-@cli.command()
-@click.option("--as-csv", is_flag=True, help="Ouput a CSV string.")
-def get_all(as_csv: bool):
-    if as_csv:
-        click.echo(services.export_to_csv().getvalue())
-    else:
-        click.echo(models.get_all_entries())
 
 
 @cli.command()
@@ -52,33 +45,52 @@ def import_csv(csv_file):
 
 
 @cli.command()
-@click.option("--id", type=click.UUID, required=True)
+@click.option("--id", type=int, required=True)
 @click.option("-n", "--name", required=True)
 @click.option("-a", "--amount", type=float, required=True)
 @click.option("-c", "--category", default=None)
-def update(id: uuid.UUID, name: str, amount: float, category: str | None):
+def update(id: int, name: str, amount: float, category: str | None):
     models.update_entry(id, name, amount, category)
 
 
 @cli.command()
-@click.option("--id", required=True, type=click.UUID)
-def delete(id: uuid.UUID):
+@click.option("--id", required=True, type=int)
+def delete(id: int):
     models.delete_entry(id)
 
+
 @cli.command()
-def get_entries():
+@click.option("--as-csv", is_flag=True, help="Export entries to CSV")
+def get_entries(as_csv: bool):
     entries = models.get_all_entries()
 
-    table = [
-        [entry.id, entry.name, entry.amount, entry.category]for entry in entries
-    ]
-
-    # Affichage sous forme de tableau
-    headers = ["ID", "Name", "Amount", "Category"]
-    click.echo(tabulate(table, headers=headers, tablefmt="grid"))
-
+    if as_csv:
+        click.echo(tabulate(entries, headers="keys"))
+    else:
+        # Display the entries in a table format
+        table = [
+            [entry.id, entry.name, entry.amount, entry.category] for entry in entries
+        ]
+        headers = ["ID", "Name", "Amount", "Category"]
+        click.echo(tabulate(table, headers=headers, tablefmt="grid"))
 
 @cli.command()
 def init_db():
     models.init_db()
+
+
+
+
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return render_template("home.html")
+
+@app.route("/hello/")
+@app.route("/hello/<name>")
+def hello(name=None):
+    return render_template("home.html", name=name)
+
 

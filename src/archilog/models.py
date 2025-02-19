@@ -3,41 +3,30 @@ import uuid
 
 from dataclasses import dataclass
 from sqlalchemy import *
-from sqlalchemy.dialects.postgresql import UUID
 
 
 
-engine = create_engine("sqlite:///data.db", echo=True)
+
+engine = create_engine("sqlite:///data.db")
 metadata = MetaData()
 
-users_table = Table(
-    "users",
+
+# Définition de la table entries
+entries_table = Table(
+    "entries",
     metadata,
     Column("id", Integer, primary_key=True, autoincrement=True),
     Column("name", String, nullable=False),
-    Column("amount", Integer, nullable=False),
-    Column("category", String, nullable=False)
+    Column("amount", Float, nullable=False),
+    Column("category", String, nullable=True)
 )
-
-metadata.create_all(engine)  # Créer les tables SQLAlchemy
-
 
 
 
 
 
 def init_db():
-    with engine.connect() as conn:
-        conn.execute(text("DROP TABLE IF EXISTS entries"))  # Supprimez la table si elle existe déjà
-        conn.execute(text("""
-            CREATE TABLE IF NOT EXISTS entries (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                name TEXT NOT NULL,
-                amount REAL NOT NULL,
-                category TEXT
-            )
-        """))
-        conn.commit()
+    metadata.create_all(engine)  # Créer les tables SQLAlchemy
 
 
 
@@ -59,47 +48,43 @@ class Entry:
         )
 
 
-def create_entry(name: str, amount: float, category: str | None = None) -> None:
+# Fonction pour insérer une entrée dans la table entries
+def create_entry(name: str, amount: float, category: str | None = None):
+    stmt = insert(entries_table).values(name=name, amount=amount, category=category)
     with engine.connect() as conn:
-        conn.execute(text(
-            "INSERT INTO entries (name, amount, category) VALUES (:name, :amount, :category)"
-        ), {"name": name, "amount": amount, "category": category})
-
+        conn.execute(stmt)
         conn.commit()
 
-
-
-
-
-
-
-def get_entry(id: int) -> Entry:  # id doit être un entier maintenant
+# Fonction pour obtenir une entrée par son ID
+def get_entry(id: int):
+    stmt = select(entries_table.c.id, entries_table.c.name, entries_table.c.amount, entries_table.c.category).where(entries_table.c.id == id)
     with engine.connect() as conn:
-        result = conn.execute(text("select * from entries where id = ?"), (id,)).fetchone()
+        result = conn.execute(stmt).fetchone()
         if result:
-            return Entry.from_db(*result)
+            return result  # Retourne la ligne sous forme de tuple
         else:
             raise Exception("Entry not found")
 
 
-
-def get_all_entries() -> list[Entry]:
+# Fonction pour obtenir toutes les entrées
+def get_all_entries():
+    stmt = select(entries_table.c.id, entries_table.c.name, entries_table.c.amount, entries_table.c.category)
     with engine.connect() as conn:
-        results = conn.execute(text("select * from entries")).fetchall()
-        return [Entry.from_db(*r) for r in results]
+        results = conn.execute(stmt).fetchall()
+        return results  # Liste de tuples
 
 
-def update_entry(id: int, name: str, amount: float, category: str | None) -> None:  # id est un entier maintenant
+# Fonction pour mettre à jour une entrée
+def update_entry(id: int, name: str, amount: float, category: str | None):
+    stmt = update(entries_table).where(entries_table.c.id == id).values(name=name, amount=amount, category=category)
     with engine.connect() as conn:
-        conn.execute(text(
-            "UPDATE entries SET name = :name, amount = :amount, category = :category WHERE id = :id"
-        ), {"name": name, "amount": amount, "category": category, "id": id})
+        conn.execute(stmt)
         conn.commit()
 
-
-
-
-def delete_entry(id: int) -> None:  # id est un entier maintenant
+# Fonction pour supprimer une entrée
+def delete_entry(id: int):
+    stmt = delete(entries_table).where(entries_table.c.id == id)
     with engine.connect() as conn:
-        conn.execute(text("delete from entries where id = ?"), (id,))
+        conn.execute(stmt)
         conn.commit()
+
