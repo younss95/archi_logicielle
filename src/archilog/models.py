@@ -36,7 +36,7 @@ class Entry:
     id: int
     name: str
     amount: float
-    category: str | None
+    category: str
 
     @classmethod
     def from_db(cls, id: int, name: str, amount: float, category: str | None):

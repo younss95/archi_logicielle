@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Supprimer un produit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Liste des produits</h1>
+
+    {% if products %}
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Montant</th>
+                    <th>Catégorie</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                    <tr>
+                        <td>{{ product.id }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.amount }}</td>
+                        <td>{{ product.category }}</td>
+                        <td>
+                            <form method="post" action="{{ url_for('delete_product') }}">
+                                <input type="hidden" name="id" value="{{ product.id }}">
+                                <button type="submit">Supprimer</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>Aucun produit trouvé.</p>
+    {% endif %}
+
+    <a href="{{ url_for('home') }}" class="form-button">Retour</a>
+
+</body>
+</html>

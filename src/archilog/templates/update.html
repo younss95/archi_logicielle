@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier un produit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Modifier un produit</h1>
+
+    <form method="post" action="{{ url_for('update_product') }}">
+        <label for="id">ID du produit :</label>
+        <input type="number" id="id" name="id" required>
+
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="amount">Montant :</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+
+        <label for="category">Catégorie :</label>
+        <input type="text" id="category" name="category">
+
+        <button type="submit" class="form-button">Modifier</button>
+    </form>
+
+    <a href="{{ url_for('home') }}" class="form-button">Retour à l'accueil</a>
+
+</body>
+</html>

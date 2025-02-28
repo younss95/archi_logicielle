@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Importer / Exporter un fichier CSV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Importer un fichier CSV</h1>
+
+    <form method="POST" action="{{ url_for('import_csv') }}" enctype="multipart/form-data">
+        <label for="csv_file">Choisir un fichier CSV :</label>
+        <input type="file" id="csv_file" name="csv_file" accept=".csv" required>
+
+        <button type="submit">Importer</button>
+    </form>
+
+    <h1>Exporter un fichier CSV</h1>
+
+    <form method="GET" action="{{ url_for('export_csv') }}">
+        <button type="submit">Exporter</button>
+    </form>
+
+<a href="{{ url_for('home') }}" class="form-button">Retour</a>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rechercher un produit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Rechercher un produit</h1>
+
+    <form method="post" action="{{ url_for('get_product') }}">
+        <label for="id">ID du produit :</label>
+        <input type="number" id="id" name="id" required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    {% if product %}
+        <h2>Détails du produit</h2>
+        <p><strong>ID :</strong> {{ product.id }}</p>
+        <p><strong>Nom :</strong> {{ product.name }}</p>
+        <p><strong>Montant :</strong> {{ product.amount }}</p>
+        <p><strong>Catégorie :</strong> {{ product.category }}</p>
+    {% elif product is none and request.method == "POST" %}
+        <p>Aucun produit trouvé avec cet ID.</p>
+    {% endif %}
+
+    <a href="{{ url_for('home') }}" class="form-button">Retour à l'accueil</a>
+
+</body>
+</html>
