@@ -22,7 +22,7 @@
         <p><strong>Montant :</strong> {{ product.amount }}</p>
         <p><strong>Catégorie :</strong> {{ product.category }}</p>
     {% elif product is none and request.method == "POST" %}
-        <p>Aucun produit trouvé avec cet ID.</p>
+        <p>Aucun produit trouvé avec cet ID</p>
     {% endif %}
 
     <a href="{{ url_for('home') }}" class="form-button">Retour à l'accueil</a>

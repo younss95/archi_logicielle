@@ -86,7 +86,7 @@ def init_db():
 
 
 app = Flask(__name__)
-app.secret_key = 'une_cle_secrète_au_hasard'  # Remplace par une clé forte et secrète
+app.secret_key = 'test'
 
 
 @app.route("/")
@@ -161,7 +161,7 @@ def import_csv():
         file = request.files.get("csv_file")
 
         if file and file.filename.endswith('.csv'):
-            import_from_csv(file)  # Utilisation de ta fonction d'importation
+            import_from_csv(file)
             flash("Fichier CSV importé avec succès!")
             return redirect(url_for('import_csv'))
         else:
@@ -171,9 +171,7 @@ def import_csv():
 
 @app.route("/export_csv", methods=["GET"])
 def export_csv():
-    csv_data = export_to_csv()  # Récupération des données CSV
-
-    # Création d'une réponse Flask avec le bon type MIME
+    csv_data = export_to_csv()
     response = Response(csv_data.getvalue(), content_type="text/csv")
     response.headers["Content-Disposition"] = "attachment; filename=export.csv"
 
