@@ -48,6 +48,17 @@ def import_csv(csv_file):
 
 
 @cli.command()
+@click.argument("csv_file", type=click.Path(writable=True))
+def export_csv(csv_file):
+    csv_data = services.export_to_csv()
+    with open(csv_file, "w", newline="") as file:
+        file.write(csv_data.getvalue())
+
+    print(f"Fichier exporté : {csv_file}")
+
+
+
+@cli.command()
 @click.option("--id", type=int, required=True)
 @click.option("-n", "--name", required=True)
 @click.option("-a", "--amount", type=float, required=True)

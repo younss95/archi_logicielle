@@ -20,10 +20,14 @@ def export_to_csv() -> io.StringIO:
 
 
 def import_from_csv(csv_file) -> None:
-    # Convertir le fichier téléchargé en StringIO
-    file_stream = io.StringIO(csv_file.read().decode("utf-8"))
+    content = csv_file.read()
 
-    # Lire le fichier CSV
+    # Vérifie si on doit décoder
+    if isinstance(content, bytes):
+        content = content.decode("utf-8")
+
+    file_stream = io.StringIO(content)
+
     csv_reader = csv.DictReader(file_stream)
     for row in csv_reader:
         create_entry(
