@@ -1,8 +1,5 @@
-import sqlalchemy
-import uuid
-
 from dataclasses import dataclass
-from sqlalchemy import *
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, Float, insert, select, update, delete
 
 
 

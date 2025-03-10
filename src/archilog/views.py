@@ -1,7 +1,4 @@
 import click
-import csv
-
-import archilog.models as models
 import archilog.services as services
 
 from tabulate import tabulate
@@ -14,11 +11,6 @@ from archilog.services import import_from_csv, export_to_csv
 @click.group()
 def cli():
     pass
-
-
-@cli.command()
-def init_db():
-    models.init_db()
 
 
 @cli.command()
@@ -97,12 +89,9 @@ def init_db():
 
 
 app = Flask(__name__)
+
 app.secret_key = 'test'
 
-
-@app.route("/")
-def hello_world():
-    return render_template("home.html")
 
 @app.route("/hello/")
 @app.route("/hello/<name>")
@@ -188,5 +177,3 @@ def export_csv():
 
     return response
 
-if __name__ == "__main__":
-    app.run(debug=True)
