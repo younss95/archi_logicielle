@@ -7,7 +7,6 @@ import archilog.models as models
 from archilog.services import import_from_csv, export_to_csv
 
 
-
 @click.group()
 def cli():
     pass
@@ -28,8 +27,8 @@ def create(name: str, amount: float, category: str | None):
 
 @cli.command()
 @click.option("--id", required=True, type=int)
-def get(id: int):
-    click.echo(models.get_entry(id))
+def get(_id: int):
+    click.echo(models.get_entry(_id))
 
 
 
@@ -55,14 +54,14 @@ def export_csv(csv_file):
 @click.option("-n", "--name", required=True)
 @click.option("-a", "--amount", type=float, required=True)
 @click.option("-c", "--category", default=None)
-def update(id: int, name: str, amount: float, category: str | None):
-    models.update_entry(id, name, amount, category)
+def update(_id: int, name: str, amount: float, category: str | None):
+    models.update_entry(_id, name, amount, category)
 
 
 @cli.command()
 @click.option("--id", required=True, type=int)
-def delete(id: int):
-    models.delete_entry(id)
+def delete(_id: int):
+    models.delete_entry(_id)
 
 
 @cli.command()
@@ -86,11 +85,12 @@ def init_db():
 
 
 
+app = Flask(__name__, template_folder="templates")
 
 
-app = Flask(__name__)
 
 app.secret_key = 'test'
+
 
 
 @app.route("/hello/")
