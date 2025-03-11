@@ -36,9 +36,9 @@ class Entry:
     category: str
 
     @classmethod
-    def from_db(cls, id: int, name: str, amount: float, category: str | None):
+    def from_db(cls, _id: int, name: str, amount: float, category: str | None):
         return cls(
-            id,
+            _id,
             name,
             amount,
             category,
@@ -53,7 +53,7 @@ def create_entry(name: str, amount: float, category: str | None = None):
         conn.commit()
 
 # Fonction pour obtenir une entrée par son ID
-def get_entry(id: int):
+def get_entry(_id: int):
     stmt = select(entries_table.c.id, entries_table.c.name, entries_table.c.amount, entries_table.c.category).where(entries_table.c.id == id)
     with engine.connect() as conn:
         result = conn.execute(stmt).fetchone()
@@ -72,14 +72,14 @@ def get_all_entries():
 
 
 # Fonction pour mettre à jour une entrée
-def update_entry(id: int, name: str, amount: float, category: str | None):
+def update_entry(_id: int, name: str, amount: float, category: str | None):
     stmt = update(entries_table).where(entries_table.c.id == id).values(name=name, amount=amount, category=category)
     with engine.connect() as conn:
         conn.execute(stmt)
         conn.commit()
 
 # Fonction pour supprimer une entrée
-def delete_entry(id: int):
+def delete_entry(_id: int):
     stmt = delete(entries_table).where(entries_table.c.id == id)
     with engine.connect() as conn:
         conn.execute(stmt)
