@@ -11,7 +11,7 @@
     <div class="form-container">
         <h1 class="text-center">Ajouter un produit</h1>
 
-        <form method="post" action="{{ url_for('create_product') }}">
+        <form method="post" action="{{ url_for('web_ui.create_product') }}">
             <label for="name">Nom :</label>
             <input type="text" id="name" name="name" required>
 
@@ -24,7 +24,7 @@
             <button type="submit" class="form-button">Ajouter</button>
         </form>
 
-        <a href="{{ url_for('home') }}" class="form-button">Retour</a>
+        <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
     </div>
 </section>
 

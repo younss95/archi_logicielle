@@ -26,3 +26,7 @@ build-backend = "pdm.backend"
 [tool.pdm]
 distribution = true
 
+[tool.pdm.scripts]
+_.env_file = "dev.env"
+start = "flask --app archilog.views --debug run"
+

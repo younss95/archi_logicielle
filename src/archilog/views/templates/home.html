@@ -1,0 +1,29 @@
+
+<!--  AUTEUR : Younes AZIRGUI-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestionnaire de budget</title>
+</head>
+<body>
+
+<section class="form-container-parent">
+    <div class="form-container">
+        <h1 class="text-center">Bienvenue sur le gestionnaire de budget</h1>
+
+        <a class="form-button" href="{{ url_for('web_ui.create_product') }}">Créer un produit</a>
+        <a class="form-button" href="{{ url_for('web_ui.delete_product') }}">Supprimer un produit</a>
+        <a class="form-button" href="{{ url_for('web_ui.get_product') }}">Rechercher un produit</a>
+        <a class="form-button" href="{{ url_for('web_ui.get_all_products') }}">Voir tous les produits</a>
+        <a class="form-button" href="{{ url_for('web_ui.import_csv') }}">Importer un CSV</a>
+        <a class="form-button" href="{{ url_for('web_ui.export_csv') }}">Exporter un CSV</a>
+    </div>
+</section>
+
+</body>
+</html>
+

@@ -28,7 +28,7 @@
                         <td>{{ product.amount }}</td>
                         <td>{{ product.category }}</td>
                         <td>
-                            <form method="post" action="{{ url_for('delete_product') }}">
+                            <form method="post" action="{{ url_for('web_ui.delete_product') }}">
                                 <input type="hidden" name="id" value="{{ product.id }}">
                                 <button type="submit">Supprimer</button>
                             </form>
@@ -41,7 +41,7 @@
         <p>Aucun produit trouvé</p>
     {% endif %}
 
-    <a href="{{ url_for('home') }}" class="form-button">Retour</a>
+    <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
 
 </body>
 </html>
