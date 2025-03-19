@@ -1,4 +1,5 @@
 from flask import Flask
+
 from archilog.views.web import web_ui
 from archilog import config
 
@@ -12,5 +13,6 @@ def create_app():
 
     # Enregistrer les Blueprints
     app.register_blueprint(web_ui)
+
 
     return app

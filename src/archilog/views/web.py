@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash, Response
+from flask import Blueprint, render_template, request, redirect, url_for, flash, Response, abort
 import archilog.models as models
 from archilog.services import import_from_csv, export_to_csv
 
@@ -77,3 +77,14 @@ def export_csv():
     response = Response(csv_data.getvalue(), content_type="text/csv")
     response.headers["Content-Disposition"] = "attachment; filename=export.csv"
     return response
+
+
+@web_ui.get("/users/create")
+def users_create_form():
+    abort(500)  # Provoque l'erreur 500
+    return render_template("users_create_form.html")
+
+@web_ui.errorhandler(500)
+def handle_internal_error(error):
+    flash("Erreur interne du serveur", "error")
+    return redirect(url_for("web_ui.home"))

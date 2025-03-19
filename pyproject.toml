@@ -29,4 +29,4 @@ distribution = true
 [tool.pdm.scripts]
 _.env_file = "dev.env"
 start = "flask --app archilog.views --debug run"
-
+cli = "python -m archilog.views.cli"
