@@ -1,7 +1,9 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, Response, abort
 import archilog.models as models
 from archilog.services import import_from_csv, export_to_csv
-
+from flask_wtf import FlaskForm
+from wtforms import StringField
+from wtforms.validators import DataRequired
 
 # Création du Blueprint
 web_ui = Blueprint("web_ui", __name__, url_prefix="/")
@@ -82,9 +84,33 @@ def export_csv():
 @web_ui.get("/users/create")
 def users_create_form():
     abort(500)  # Provoque l'erreur 500
-    return render_template("users_create_form.html")
+
+
 
 @web_ui.errorhandler(500)
 def handle_internal_error(error):
     flash("Erreur interne du serveur", "error")
     return redirect(url_for("web_ui.home"))
+
+
+
+
+
+# PARTIE VALIDATION ET TRACABILITE
+
+class MyForm(FlaskForm):
+    name = StringField("name", validators=[DataRequired()])
+
+
+
+@web_ui.route("/submit", methods=["GET", "POST"])
+def submit():
+    form = MyForm()
+    if form.validate_on_submit():
+        return redirect("/success")
+    return render_template("submit.html", form=form)
+
+
+
+
+
