@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -6,42 +6,29 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <h1>Supprimer un produit</h1>
 
-    <h1>Liste des produits</h1>
+    <form method="POST">
+        <label for="id">Sélectionnez un produit à supprimer :</label>
+        <select name="id" id="id">
+            {% for product in products %}
+                <option value="{{ product.id }}">{{ product.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Supprimer</button>
+    </form>
 
-    {% if products %}
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nom</th>
-                    <th>Montant</th>
-                    <th>Catégorie</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for product in products %}
-                    <tr>
-                        <td>{{ product.id }}</td>
-                        <td>{{ product.name }}</td>
-                        <td>{{ product.amount }}</td>
-                        <td>{{ product.category }}</td>
-                        <td>
-                            <form method="post" action="{{ url_for('web_ui.delete_product') }}">
-                                <input type="hidden" name="id" value="{{ product.id }}">
-                                <button type="submit">Supprimer</button>
-                            </form>
-                        </td>
-                    </tr>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="flash {{ category }}">{{ message }}</li>
                 {% endfor %}
-            </tbody>
-        </table>
-    {% else %}
-        <p>Aucun produit trouvé</p>
-    {% endif %}
+            </ul>
+        {% endif %}
+    {% endwith %}
 
-    <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
 
+<a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
 </body>
 </html>

@@ -1,31 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Modifier un produit</title>
+    <title>Mettre à jour un produit</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <h1>Mettre à jour le produit</h1>
 
-    <h1>Modifier un produit</h1>
+    <form method="POST">
+    {{ form.hidden_tag() }}
 
-    <form method="post" action="{{ url_for('web_ui.update_product') }}">
-        <label for="id">ID du produit :</label>
-        <input type="number" id="id" name="id" required>
+    <!-- Champ caché pour l'ID du produit -->
+    <p>{{ form.product_id.label }}: {{ form.product_id() }}</p>
+    <p>{{ form.name.label }}: {{ form.name() }}</p>
+    <p>{{ form.amount.label }}: {{ form.amount() }}</p>
+    <p>{{ form.category.label }}: {{ form.category() }}</p>
 
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="amount">Montant :</label>
-        <input type="number" id="amount" name="amount" step="0.01" required>
+    <p>{{ form.submit() }}</p>  <!-- Le bouton de soumission -->
+</form>
 
-        <label for="category">Catégorie :</label>
-        <input type="text" id="category" name="category">
 
-        <button type="submit" class="form-button">Modifier</button>
-    </form>
 
-    <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour à l'accueil</a>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="flash {{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
 
+    <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
 </body>
 </html>
