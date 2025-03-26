@@ -9,13 +9,12 @@
     <h1>Supprimer un produit</h1>
 
     <form method="POST">
-        <label for="id">Sélectionnez un produit à supprimer :</label>
-        <select name="id" id="id">
-            {% for product in products %}
-                <option value="{{ product.id }}">{{ product.name }}</option>
-            {% endfor %}
-        </select>
-        <button type="submit">Supprimer</button>
+        {{ form.hidden_tag() }}  <!-- Pour les champs cachés de CSRF -->
+        <div>
+            {{ form.product_id.label }}<br>
+            {{ form.product_id }}  <!-- Champ select généré par WTForms -->
+        </div>
+        <button type="submit">{{ form.submit.label }}</button>
     </form>
 
     {% with messages = get_flashed_messages(with_categories=true) %}
@@ -28,7 +27,6 @@
         {% endif %}
     {% endwith %}
 
-
-<a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
+    <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
 </body>
 </html>

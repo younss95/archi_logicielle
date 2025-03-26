@@ -1,5 +1,19 @@
+import logging
 import os
 from dataclasses import dataclass
+
+
+
+
+# Configurer le logging
+logging.basicConfig(
+    level=logging.INFO,  # On affiche au minimum les messages INFO
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("activity.log"),  # Enregistre dans un fichier
+        logging.StreamHandler()  # Affiche dans la console
+    ]
+)
 
 @dataclass
 class Config:
