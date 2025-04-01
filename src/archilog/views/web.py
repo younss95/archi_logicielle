@@ -1,5 +1,7 @@
 import logging
 from flask import Blueprint, render_template, request, redirect, url_for, flash, Response, abort
+from wtforms.fields.choices import SelectField
+
 import archilog.models as models
 from archilog.services import import_from_csv, export_to_csv
 from flask_wtf import FlaskForm
@@ -15,14 +17,14 @@ auth = HTTPBasicAuth()
 # Utilisateurs avec leurs mots de passe hachés
 users = {
     "john": generate_password_hash("hello"),
-    "susan": generate_password_hash("bye")
+    "admin": generate_password_hash("admin")
 }
 
 # Exemple de fonction pour obtenir les rôles d'un utilisateur
 def get_roles(username):
     roles = {
         "john": ["user"],  # John a le rôle 'user'
-        "susan": ["admin"]  # Susan a le rôle 'admin'
+        "admin": ["admin"]  # Susan a le rôle 'admin'
     }
     return roles.get(username, [])
 
@@ -49,46 +51,57 @@ def home():
     return render_template("home.html")
 
 @web_ui.route("/create", methods=["GET", "POST"])
+@auth.login_required(role="admin")  # Seuls les admins peuvent créer un produit
 def create_product():
     form = CreateProductForm()
 
-    if form.validate_on_submit():  # Si le formulaire est validé
+    if form.validate_on_submit():
         name = form.name.data
         amount = form.amount.data
-        category = form.category.data or None  # Si category est vide, on le met à None
+        category = form.category.data or None
 
-        # Création de l'entrée dans la base de données
         models.create_entry(name, amount, category)
 
         flash(f"Produit '{name}' créé avec succès!", "success")
-        logging.info(f"Produit '{name}' créé avec montant {amount} et catégorie {category}.")
-        return redirect(url_for("web_ui.home"))  # Redirige après création
+        logging.info(f"Produit '{name}' créé par {auth.current_user()}.")
+        return redirect(url_for("web_ui.home"))
 
     return render_template("create.html", form=form)
 
 @web_ui.route("/delete", methods=["GET", "POST"])
+@auth.login_required(role="admin")  # Seuls les admins peuvent supprimer un produit
 def delete_product():
     form = DeleteProductForm()
     products = models.get_all_entries()
+    form.product_id.choices = [(p[0], p[1]) for p in products]
 
     if form.validate_on_submit():
         product_id = form.product_id.data
-        if product_id:
-            # Suppression du produit par son ID
-            models.delete_entry(int(product_id))
-            flash("Produit supprimé avec succès!", "success")
-            logging.info(f"Produit avec ID {product_id} supprimé.")
+        product = models.get_entry(product_id)
+
+        if product is None:
+            flash("Produit non trouvé.", "error")
             return redirect(url_for("web_ui.delete_product"))
 
-    return render_template("delete.html", form=form, products=products)
+        models.delete_entry(product_id)
+        flash("Produit supprimé avec succès.", "success")
+        logging.info(f"Produit {product_id} supprimé par {auth.current_user()}.")
+        return redirect(url_for("web_ui.delete_product"))
+
+    return render_template("delete.html", form=form)
 
 @web_ui.route("/get", methods=["GET", "POST"])
 def get_product():
     product = None
     if request.method == "POST":
         product_id = request.form["id"]
-        product = models.get_entry(product_id)
-        logging.info(f"Produit avec ID {product_id} recherché.")
+        try:
+            product = models.get_entry(product_id)
+            logging.info(f"Produit avec ID {product_id} recherché.")
+        except Exception as e:
+            flash("Produit non trouvé. Veuillez vérifier l'ID.", "error")
+            logging.warning(f"Tentative d'accès à un produit inexistant (ID: {product_id}).")
+
     return render_template("get.html", product=product)
 
 @web_ui.route("/get_all")
@@ -98,6 +111,7 @@ def get_all_products():
     return render_template("get_all.html", products=products)
 
 @web_ui.route("/update", methods=["GET", "POST"])
+@auth.login_required(role="admin")  # Seuls les admins peuvent mettre à jour un produit
 def update_product():
     form = UpdateProductForm()
     product = None
@@ -108,23 +122,19 @@ def update_product():
         amount = form.amount.data
         category = form.category.data or None
 
-        # Mise à jour du produit dans la base de données
-        models.update_entry(product_id, name, amount, category)
+        try:
+            product = models.get_entry(product_id)
+        except Exception:
+            flash("Produit non trouvé.", "error")
+            return redirect(url_for("web_ui.update_product"))
 
-        flash(f"Produit '{name}' mis à jour avec succès!", "success")
-        logging.info(f"Produit avec ID {product_id} mis à jour avec nouveau nom '{name}', montant {amount}, catégorie {category}.")
+        models.update_entry(product_id, name, amount, category)
+        flash(f"Produit '{name}' mis à jour!", "success")
+        logging.info(f"Produit {product_id} mis à jour par {auth.current_user()}.")
         return redirect(url_for("web_ui.home"))
 
-    # Si on est en GET, on récupère l'ID du produit à mettre à jour
-    product_id = request.args.get("id")
-    if product_id:
-        product = models.get_entry(product_id)
-        form.product_id.data = product.id
-        form.name.data = product.name
-        form.amount.data = product.amount
-        form.category.data = product.category
-
     return render_template("update.html", form=form, product=product)
+
 
 @web_ui.route("/import_csv", methods=["GET", "POST"])
 def import_csv():
@@ -170,8 +180,9 @@ class CreateProductForm(FlaskForm):
     submit = SubmitField("Soumettre")  # Ajout du bouton de soumission
 
 
+
 class DeleteProductForm(FlaskForm):
-    product_id = StringField("ID du produit", validators=[DataRequired()])
+    product_id = SelectField("Sélectionnez un produit à supprimer", coerce=int)
     submit = SubmitField("Supprimer")
 
 

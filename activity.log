@@ -367,3 +367,1443 @@ FROM entries
 2025-03-26 14:06:51,028 [INFO] Page d'accueil demandée.
 2025-03-26 14:06:51,029 [INFO] 127.0.0.1 - - [26/Mar/2025 14:06:51] "GET / HTTP/1.1" 200 -
 2025-03-26 14:06:51,034 [INFO] 127.0.0.1 - - [26/Mar/2025 14:06:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:46:58,883 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-28 12:46:58,883 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-28 12:46:58,898 [INFO]  * Restarting with stat
+2025-03-28 12:47:00,130 [WARNING]  * Debugger is active!
+2025-03-28 12:47:00,136 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 12:47:02,056 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:02,109 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:02] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:02,414 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:03,371 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-28 12:47:04,701 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:04] "GET /create HTTP/1.1" 200 -
+2025-03-28 12:47:04,781 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:07,054 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:07,056 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:07] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:07,120 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:07,906 [INFO] BEGIN (implicit)
+2025-03-28 12:47:07,909 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:47:07,910 [INFO] [generated in 0.00401s] ()
+2025-03-28 12:47:07,915 [INFO] ROLLBACK
+2025-03-28 12:47:07,928 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:07] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:47:07,971 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:09,235 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:09,238 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:09] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:09,297 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:10,195 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:10] "GET /get HTTP/1.1" 200 -
+2025-03-28 12:47:10,287 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:11,127 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:11,128 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:11] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:11,195 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:12,136 [INFO] BEGIN (implicit)
+2025-03-28 12:47:12,138 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:47:12,139 [INFO] [cached since 4.233s ago] ()
+2025-03-28 12:47:12,141 [INFO] ROLLBACK
+2025-03-28 12:47:12,143 [INFO] Demande de tous les produits. Nombre de produits: 3.
+2025-03-28 12:47:12,156 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:12] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 12:47:12,212 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:16,612 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:16,615 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:16] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:16,687 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:17,422 [INFO] BEGIN (implicit)
+2025-03-28 12:47:17,423 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:47:17,425 [INFO] [cached since 9.519s ago] ()
+2025-03-28 12:47:17,427 [INFO] ROLLBACK
+2025-03-28 12:47:17,430 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:17] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:47:17,577 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:19,085 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:19,088 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:19] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:19,181 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:20,028 [INFO] BEGIN (implicit)
+2025-03-28 12:47:20,031 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:47:20,033 [INFO] [cached since 12.13s ago] ()
+2025-03-28 12:47:20,034 [INFO] ROLLBACK
+2025-03-28 12:47:20,037 [INFO] Demande de tous les produits. Nombre de produits: 3.
+2025-03-28 12:47:20,039 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:20] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 12:47:20,123 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:21,326 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:21,329 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:21] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:21,407 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:22,381 [INFO] BEGIN (implicit)
+2025-03-28 12:47:22,382 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:47:22,384 [INFO] [cached since 14.48s ago] ()
+2025-03-28 12:47:22,386 [INFO] ROLLBACK
+2025-03-28 12:47:22,390 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:22] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:47:22,438 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:24,383 [INFO] BEGIN (implicit)
+2025-03-28 12:47:24,385 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:47:24,387 [INFO] [cached since 16.48s ago] ()
+2025-03-28 12:47:24,389 [INFO] ROLLBACK
+2025-03-28 12:47:24,398 [INFO] BEGIN (implicit)
+2025-03-28 12:47:24,400 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 12:47:24,401 [INFO] [generated in 0.00290s] (55,)
+2025-03-28 12:47:24,406 [INFO] COMMIT
+2025-03-28 12:47:24,418 [INFO] Produit avec ID 55 supprimé.
+2025-03-28 12:47:24,421 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:24] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 12:47:24,436 [INFO] BEGIN (implicit)
+2025-03-28 12:47:24,438 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:47:24,439 [INFO] [cached since 16.53s ago] ()
+2025-03-28 12:47:24,442 [INFO] ROLLBACK
+2025-03-28 12:47:24,446 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:24] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:47:24,539 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:25,816 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:25,818 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:25] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:25,906 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:27,107 [INFO] BEGIN (implicit)
+2025-03-28 12:47:27,108 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:47:27,109 [INFO] [cached since 19.2s ago] ()
+2025-03-28 12:47:27,111 [INFO] ROLLBACK
+2025-03-28 12:47:27,113 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 12:47:27,115 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:27] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 12:47:27,197 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:28,682 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:28,686 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:28] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:28,771 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:30,035 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:30] "GET /update HTTP/1.1" 200 -
+2025-03-28 12:47:30,139 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:32,319 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:32,321 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:32] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:32,441 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:33,110 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:33] "GET /import_csv HTTP/1.1" 200 -
+2025-03-28 12:47:33,150 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:47:34,516 [INFO] Page d'accueil demandée.
+2025-03-28 12:47:34,520 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:34] "GET / HTTP/1.1" 200 -
+2025-03-28 12:47:34,603 [INFO] 127.0.0.1 - - [28/Mar/2025 12:47:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:53:05,662 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:05] "GET /create HTTP/1.1" 200 -
+2025-03-28 12:53:05,747 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:53:08,371 [INFO] BEGIN (implicit)
+2025-03-28 12:53:08,373 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:53:08,374 [INFO] [cached since 360.5s ago] ()
+2025-03-28 12:53:08,375 [INFO] ROLLBACK
+2025-03-28 12:53:08,377 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 12:53:08,378 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:08] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 12:53:08,457 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:53:11,249 [INFO] BEGIN (implicit)
+2025-03-28 12:53:11,250 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:53:11,252 [INFO] [cached since 363.3s ago] ()
+2025-03-28 12:53:11,255 [INFO] ROLLBACK
+2025-03-28 12:53:11,260 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:11] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:53:11,315 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:53:18,650 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:18] "GET /get HTTP/1.1" 200 -
+2025-03-28 12:53:18,735 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:53:21,802 [INFO] BEGIN (implicit)
+2025-03-28 12:53:21,803 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 12:53:21,806 [INFO] [generated in 0.00336s] ('50',)
+2025-03-28 12:53:21,807 [INFO] ROLLBACK
+2025-03-28 12:53:21,808 [INFO] Produit avec ID 50 recherché.
+2025-03-28 12:53:21,811 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:21] "POST /get HTTP/1.1" 200 -
+2025-03-28 12:53:21,854 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:53:24,539 [INFO] BEGIN (implicit)
+2025-03-28 12:53:24,540 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 12:53:24,542 [INFO] [cached since 2.74s ago] ('52',)
+2025-03-28 12:53:24,544 [INFO] ROLLBACK
+2025-03-28 12:53:24,673 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:24] "[35m[1mPOST /get HTTP/1.1[0m" 500 -
+2025-03-28 12:53:24,709 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:24] "GET /get?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 12:53:24,715 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:24] "GET /get?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 12:53:24,772 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:24] "GET /get?__debugger__=yes&cmd=resource&f=console.png&s=J54K8OTKKIZimKHEVv9k HTTP/1.1" 200 -
+2025-03-28 12:53:24,923 [INFO] 127.0.0.1 - - [28/Mar/2025 12:53:24] "GET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 12:54:26,046 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 12:54:26,297 [INFO]  * Restarting with stat
+2025-03-28 12:54:27,758 [WARNING]  * Debugger is active!
+2025-03-28 12:54:27,762 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 12:54:44,930 [INFO] Page d'accueil demandée.
+2025-03-28 12:54:44,939 [INFO] 127.0.0.1 - - [28/Mar/2025 12:54:44] "GET / HTTP/1.1" 200 -
+2025-03-28 12:54:45,078 [INFO] 127.0.0.1 - - [28/Mar/2025 12:54:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:54:53,494 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-28 12:54:53,495 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-28 12:54:53,498 [INFO]  * Restarting with stat
+2025-03-28 12:54:55,159 [WARNING]  * Debugger is active!
+2025-03-28 12:54:55,164 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 12:54:55,389 [INFO] Page d'accueil demandée.
+2025-03-28 12:54:55,402 [INFO] 127.0.0.1 - - [28/Mar/2025 12:54:55] "GET / HTTP/1.1" 200 -
+2025-03-28 12:54:55,936 [INFO] 127.0.0.1 - - [28/Mar/2025 12:54:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:54:57,890 [INFO] BEGIN (implicit)
+2025-03-28 12:54:57,893 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:54:57,894 [INFO] [generated in 0.00413s] ()
+2025-03-28 12:54:57,896 [INFO] ROLLBACK
+2025-03-28 12:54:57,902 [INFO] 127.0.0.1 - - [28/Mar/2025 12:54:57] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:54:57,990 [INFO] 127.0.0.1 - - [28/Mar/2025 12:54:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:00,466 [INFO] BEGIN (implicit)
+2025-03-28 12:55:00,467 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:55:00,468 [INFO] [cached since 2.579s ago] ()
+2025-03-28 12:55:00,470 [INFO] ROLLBACK
+2025-03-28 12:55:00,473 [INFO] BEGIN (implicit)
+2025-03-28 12:55:00,474 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 12:55:00,475 [INFO] [generated in 0.00241s] (88,)
+2025-03-28 12:55:00,477 [INFO] COMMIT
+2025-03-28 12:55:00,478 [INFO] Produit avec ID 88 supprimé.
+2025-03-28 12:55:00,479 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:00] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 12:55:00,486 [INFO] BEGIN (implicit)
+2025-03-28 12:55:00,487 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:55:00,487 [INFO] [cached since 2.598s ago] ()
+2025-03-28 12:55:00,489 [INFO] ROLLBACK
+2025-03-28 12:55:00,492 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:00] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:55:00,552 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:05,122 [INFO] BEGIN (implicit)
+2025-03-28 12:55:05,123 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:55:05,125 [INFO] [cached since 7.235s ago] ()
+2025-03-28 12:55:05,127 [INFO] ROLLBACK
+2025-03-28 12:55:05,128 [INFO] BEGIN (implicit)
+2025-03-28 12:55:05,129 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 12:55:05,130 [INFO] [cached since 4.657s ago] (5445,)
+2025-03-28 12:55:05,131 [INFO] COMMIT
+2025-03-28 12:55:05,132 [INFO] Produit avec ID 5445 supprimé.
+2025-03-28 12:55:05,133 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:05] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 12:55:05,141 [INFO] BEGIN (implicit)
+2025-03-28 12:55:05,142 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:55:05,143 [INFO] [cached since 7.254s ago] ()
+2025-03-28 12:55:05,145 [INFO] ROLLBACK
+2025-03-28 12:55:05,148 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:05] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:55:05,200 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:06,989 [INFO] Page d'accueil demandée.
+2025-03-28 12:55:06,990 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:06] "GET / HTTP/1.1" 200 -
+2025-03-28 12:55:07,085 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:08,314 [INFO] BEGIN (implicit)
+2025-03-28 12:55:08,315 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:55:08,316 [INFO] [cached since 10.43s ago] ()
+2025-03-28 12:55:08,316 [INFO] ROLLBACK
+2025-03-28 12:55:08,317 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 12:55:08,324 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:08] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 12:55:08,386 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:09,552 [INFO] Page d'accueil demandée.
+2025-03-28 12:55:09,553 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:09] "GET / HTTP/1.1" 200 -
+2025-03-28 12:55:09,656 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:11,364 [INFO] BEGIN (implicit)
+2025-03-28 12:55:11,366 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:55:11,367 [INFO] [cached since 13.48s ago] ()
+2025-03-28 12:55:11,368 [INFO] ROLLBACK
+2025-03-28 12:55:11,369 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:11] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:55:11,460 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:12,807 [INFO] Page d'accueil demandée.
+2025-03-28 12:55:12,809 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:12] "GET / HTTP/1.1" 200 -
+2025-03-28 12:55:12,885 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:14,084 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:14] "GET /get HTTP/1.1" 200 -
+2025-03-28 12:55:14,148 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:16,801 [INFO] BEGIN (implicit)
+2025-03-28 12:55:16,801 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 12:55:16,802 [INFO] [generated in 0.00149s] ('646',)
+2025-03-28 12:55:16,804 [INFO] ROLLBACK
+2025-03-28 12:55:16,805 [WARNING] Tentative d'accès à un produit inexistant (ID: 646).
+2025-03-28 12:55:16,806 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:16] "POST /get HTTP/1.1" 200 -
+2025-03-28 12:55:16,852 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:18,444 [INFO] Page d'accueil demandée.
+2025-03-28 12:55:18,446 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:18] "GET / HTTP/1.1" 200 -
+2025-03-28 12:55:18,480 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:55:19,509 [INFO] BEGIN (implicit)
+2025-03-28 12:55:19,510 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:55:19,511 [INFO] [cached since 21.62s ago] ()
+2025-03-28 12:55:19,512 [INFO] ROLLBACK
+2025-03-28 12:55:19,515 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:19] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:55:19,584 [INFO] 127.0.0.1 - - [28/Mar/2025 12:55:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:56:37,326 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 12:56:37,455 [INFO]  * Restarting with stat
+2025-03-28 12:56:43,316 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-28 12:56:43,317 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-28 12:56:43,319 [INFO]  * Restarting with stat
+2025-03-28 12:56:44,694 [WARNING]  * Debugger is active!
+2025-03-28 12:56:44,697 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 12:56:48,461 [INFO] Page d'accueil demandée.
+2025-03-28 12:56:48,479 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:48] "GET / HTTP/1.1" 200 -
+2025-03-28 12:56:48,910 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:56:51,380 [INFO] BEGIN (implicit)
+2025-03-28 12:56:51,383 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:56:51,383 [INFO] [generated in 0.00320s] ()
+2025-03-28 12:56:51,385 [INFO] ROLLBACK
+2025-03-28 12:56:51,392 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:51] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:56:51,484 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:56:53,264 [INFO] BEGIN (implicit)
+2025-03-28 12:56:53,265 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:56:53,266 [INFO] [cached since 1.885s ago] ()
+2025-03-28 12:56:53,267 [INFO] ROLLBACK
+2025-03-28 12:56:53,269 [INFO] BEGIN (implicit)
+2025-03-28 12:56:53,270 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 12:56:53,271 [INFO] [generated in 0.00173s] (55151,)
+2025-03-28 12:56:53,273 [INFO] COMMIT
+2025-03-28 12:56:53,274 [WARNING] Tentative de suppression d'un produit inexistant (ID: 55151).
+2025-03-28 12:56:53,275 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:53] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 12:56:53,282 [INFO] BEGIN (implicit)
+2025-03-28 12:56:53,283 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:56:53,284 [INFO] [cached since 1.904s ago] ()
+2025-03-28 12:56:53,285 [INFO] ROLLBACK
+2025-03-28 12:56:53,288 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:53] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:56:53,343 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:56:56,515 [INFO] Page d'accueil demandée.
+2025-03-28 12:56:56,516 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:56] "GET / HTTP/1.1" 200 -
+2025-03-28 12:56:56,588 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:56:57,704 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:57] "GET /get HTTP/1.1" 200 -
+2025-03-28 12:56:57,781 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:56:58,824 [INFO] Page d'accueil demandée.
+2025-03-28 12:56:58,826 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:58] "GET / HTTP/1.1" 200 -
+2025-03-28 12:56:58,930 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:56:59,842 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:59] "GET /create HTTP/1.1" 200 -
+2025-03-28 12:56:59,920 [INFO] 127.0.0.1 - - [28/Mar/2025 12:56:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:57:01,157 [INFO] Page d'accueil demandée.
+2025-03-28 12:57:01,161 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:01] "GET / HTTP/1.1" 200 -
+2025-03-28 12:57:01,211 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:57:09,758 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:09] "GET /update HTTP/1.1" 200 -
+2025-03-28 12:57:09,828 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:57:17,182 [INFO] BEGIN (implicit)
+2025-03-28 12:57:17,184 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-03-28 12:57:17,185 [INFO] [generated in 0.00444s] ('dcdc', 51.0, 'cdcdc', '511515')
+2025-03-28 12:57:17,189 [INFO] COMMIT
+2025-03-28 12:57:17,190 [INFO] Produit avec ID 511515 mis à jour avec nouveau nom 'dcdc', montant 51, catégorie cdcdc.
+2025-03-28 12:57:17,192 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:17] "[32mPOST /update HTTP/1.1[0m" 302 -
+2025-03-28 12:57:17,202 [INFO] Page d'accueil demandée.
+2025-03-28 12:57:17,205 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:17] "GET / HTTP/1.1" 200 -
+2025-03-28 12:57:17,296 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:57:19,498 [INFO] BEGIN (implicit)
+2025-03-28 12:57:19,499 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:57:19,500 [INFO] [cached since 28.12s ago] ()
+2025-03-28 12:57:19,502 [INFO] ROLLBACK
+2025-03-28 12:57:19,503 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 12:57:19,512 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:19] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 12:57:19,562 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:57:20,798 [INFO] Page d'accueil demandée.
+2025-03-28 12:57:20,802 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:20] "GET / HTTP/1.1" 200 -
+2025-03-28 12:57:20,894 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:57:22,484 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:22] "GET /update HTTP/1.1" 200 -
+2025-03-28 12:57:22,544 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:57:34,619 [INFO] Page d'accueil demandée.
+2025-03-28 12:57:34,620 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:34] "GET / HTTP/1.1" 200 -
+2025-03-28 12:57:34,759 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 12:57:41,083 [INFO] BEGIN (implicit)
+2025-03-28 12:57:41,083 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 12:57:41,086 [INFO] [cached since 49.71s ago] ()
+2025-03-28 12:57:41,088 [INFO] ROLLBACK
+2025-03-28 12:57:41,093 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:41] "GET /delete HTTP/1.1" 200 -
+2025-03-28 12:57:41,160 [INFO] 127.0.0.1 - - [28/Mar/2025 12:57:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:00:47,110 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:00:47,243 [INFO]  * Restarting with stat
+2025-03-28 13:00:48,803 [WARNING]  * Debugger is active!
+2025-03-28 13:00:48,807 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:00:58,714 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:00:58,943 [INFO]  * Restarting with stat
+2025-03-28 13:01:00,266 [WARNING]  * Debugger is active!
+2025-03-28 13:01:00,273 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:01:28,088 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-28 13:01:28,088 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-28 13:01:28,090 [INFO]  * Restarting with stat
+2025-03-28 13:01:29,520 [WARNING]  * Debugger is active!
+2025-03-28 13:01:29,524 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:01:32,770 [INFO] Page d'accueil demandée.
+2025-03-28 13:01:32,780 [INFO] 127.0.0.1 - - [28/Mar/2025 13:01:32] "GET / HTTP/1.1" 200 -
+2025-03-28 13:01:33,086 [INFO] 127.0.0.1 - - [28/Mar/2025 13:01:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:01:36,450 [INFO] BEGIN (implicit)
+2025-03-28 13:01:36,455 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:01:36,456 [INFO] [generated in 0.00637s] ()
+2025-03-28 13:01:36,460 [INFO] ROLLBACK
+2025-03-28 13:01:36,493 [INFO] 127.0.0.1 - - [28/Mar/2025 13:01:36] "[35m[1mGET /delete HTTP/1.1[0m" 500 -
+2025-03-28 13:01:36,580 [INFO] 127.0.0.1 - - [28/Mar/2025 13:01:36] "GET /delete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 13:01:36,594 [INFO] 127.0.0.1 - - [28/Mar/2025 13:01:36] "GET /delete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 13:01:36,670 [INFO] 127.0.0.1 - - [28/Mar/2025 13:01:36] "GET /delete?__debugger__=yes&cmd=resource&f=console.png&s=8tfYZHGKltaLTrX0JTHx HTTP/1.1" 200 -
+2025-03-28 13:01:36,931 [INFO] 127.0.0.1 - - [28/Mar/2025 13:01:36] "GET /delete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 13:05:01,681 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:05:01,879 [INFO]  * Restarting with stat
+2025-03-28 13:05:08,446 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-28 13:05:08,448 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-28 13:05:08,451 [INFO]  * Restarting with stat
+2025-03-28 13:05:10,412 [WARNING]  * Debugger is active!
+2025-03-28 13:05:10,420 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:05:18,623 [INFO] Page d'accueil demandée.
+2025-03-28 13:05:18,649 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:18] "GET / HTTP/1.1" 200 -
+2025-03-28 13:05:19,111 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:20,587 [INFO] BEGIN (implicit)
+2025-03-28 13:05:20,592 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:05:20,593 [INFO] [generated in 0.00644s] ()
+2025-03-28 13:05:20,596 [INFO] ROLLBACK
+2025-03-28 13:05:20,608 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:20] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:05:20,674 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:24,425 [INFO] BEGIN (implicit)
+2025-03-28 13:05:24,426 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:05:24,427 [INFO] [cached since 3.841s ago] ()
+2025-03-28 13:05:24,428 [INFO] ROLLBACK
+2025-03-28 13:05:24,432 [INFO] BEGIN (implicit)
+2025-03-28 13:05:24,432 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 13:05:24,434 [INFO] [generated in 0.00157s] (54,)
+2025-03-28 13:05:24,439 [INFO] COMMIT
+2025-03-28 13:05:24,445 [WARNING] Tentative de suppression d'un produit inexistant (ID: 54).
+2025-03-28 13:05:24,446 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:24] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 13:05:24,454 [INFO] BEGIN (implicit)
+2025-03-28 13:05:24,455 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:05:24,456 [INFO] [cached since 3.869s ago] ()
+2025-03-28 13:05:24,457 [INFO] ROLLBACK
+2025-03-28 13:05:24,460 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:24] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:05:24,500 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:27,997 [INFO] Page d'accueil demandée.
+2025-03-28 13:05:27,998 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:27] "GET / HTTP/1.1" 200 -
+2025-03-28 13:05:28,043 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:29,367 [INFO] BEGIN (implicit)
+2025-03-28 13:05:29,368 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:05:29,369 [INFO] [cached since 8.782s ago] ()
+2025-03-28 13:05:29,370 [INFO] ROLLBACK
+2025-03-28 13:05:29,370 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-03-28 13:05:29,377 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:29] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:05:29,436 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:34,341 [INFO] Page d'accueil demandée.
+2025-03-28 13:05:34,342 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:34] "GET / HTTP/1.1" 200 -
+2025-03-28 13:05:34,381 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:35,261 [INFO] BEGIN (implicit)
+2025-03-28 13:05:35,262 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:05:35,262 [INFO] [cached since 14.68s ago] ()
+2025-03-28 13:05:35,263 [INFO] ROLLBACK
+2025-03-28 13:05:35,265 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:35] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:05:35,306 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:44,319 [INFO] Page d'accueil demandée.
+2025-03-28 13:05:44,321 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:44] "GET / HTTP/1.1" 200 -
+2025-03-28 13:05:44,413 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:45,867 [INFO] BEGIN (implicit)
+2025-03-28 13:05:45,868 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:05:45,869 [INFO] [cached since 25.28s ago] ()
+2025-03-28 13:05:45,869 [INFO] ROLLBACK
+2025-03-28 13:05:45,870 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-03-28 13:05:45,872 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:45] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:05:45,952 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:48,046 [INFO] Page d'accueil demandée.
+2025-03-28 13:05:48,049 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:48] "GET / HTTP/1.1" 200 -
+2025-03-28 13:05:48,128 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:49,588 [INFO] BEGIN (implicit)
+2025-03-28 13:05:49,589 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:05:49,590 [INFO] [cached since 29s ago] ()
+2025-03-28 13:05:49,592 [INFO] ROLLBACK
+2025-03-28 13:05:49,596 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:49] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:05:49,660 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:53,104 [INFO] Page d'accueil demandée.
+2025-03-28 13:05:53,105 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:53] "GET / HTTP/1.1" 200 -
+2025-03-28 13:05:53,161 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:05:54,796 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:54] "GET /create HTTP/1.1" 200 -
+2025-03-28 13:05:54,900 [INFO] 127.0.0.1 - - [28/Mar/2025 13:05:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:04,364 [INFO] BEGIN (implicit)
+2025-03-28 13:06:04,366 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-03-28 13:06:04,367 [INFO] [generated in 0.00314s] ('test1', 1.0, 'test')
+2025-03-28 13:06:04,373 [INFO] COMMIT
+2025-03-28 13:06:04,381 [INFO] Produit 'test1' créé avec montant 1 et catégorie test.
+2025-03-28 13:06:04,382 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:04] "[32mPOST /create HTTP/1.1[0m" 302 -
+2025-03-28 13:06:04,391 [INFO] Page d'accueil demandée.
+2025-03-28 13:06:04,397 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:04] "GET / HTTP/1.1" 200 -
+2025-03-28 13:06:04,529 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:06,011 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:06] "GET /create HTTP/1.1" 200 -
+2025-03-28 13:06:06,076 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:11,361 [INFO] BEGIN (implicit)
+2025-03-28 13:06:11,362 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-03-28 13:06:11,364 [INFO] [cached since 7s ago] ('test2', 2.0, 'test')
+2025-03-28 13:06:11,366 [INFO] COMMIT
+2025-03-28 13:06:11,372 [INFO] Produit 'test2' créé avec montant 2 et catégorie test.
+2025-03-28 13:06:11,375 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:11] "[32mPOST /create HTTP/1.1[0m" 302 -
+2025-03-28 13:06:11,386 [INFO] Page d'accueil demandée.
+2025-03-28 13:06:11,389 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:11] "GET / HTTP/1.1" 200 -
+2025-03-28 13:06:11,484 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:13,006 [INFO] BEGIN (implicit)
+2025-03-28 13:06:13,007 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:13,009 [INFO] [cached since 52.42s ago] ()
+2025-03-28 13:06:13,012 [INFO] ROLLBACK
+2025-03-28 13:06:13,017 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:13] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:06:13,106 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:13,948 [INFO] BEGIN (implicit)
+2025-03-28 13:06:13,949 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:13,950 [INFO] [cached since 53.36s ago] ()
+2025-03-28 13:06:13,952 [INFO] ROLLBACK
+2025-03-28 13:06:13,954 [INFO] BEGIN (implicit)
+2025-03-28 13:06:13,955 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 13:06:13,956 [INFO] [cached since 49.52s ago] (50,)
+2025-03-28 13:06:13,961 [INFO] COMMIT
+2025-03-28 13:06:13,967 [WARNING] Tentative de suppression d'un produit inexistant (ID: 50).
+2025-03-28 13:06:13,969 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:13] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 13:06:13,980 [INFO] BEGIN (implicit)
+2025-03-28 13:06:13,981 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:13,982 [INFO] [cached since 53.4s ago] ()
+2025-03-28 13:06:13,984 [INFO] ROLLBACK
+2025-03-28 13:06:13,987 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:13] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:06:14,046 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:17,643 [INFO] BEGIN (implicit)
+2025-03-28 13:06:17,645 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:17,651 [INFO] [cached since 57.06s ago] ()
+2025-03-28 13:06:17,653 [INFO] ROLLBACK
+2025-03-28 13:06:17,656 [INFO] BEGIN (implicit)
+2025-03-28 13:06:17,657 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 13:06:17,658 [INFO] [cached since 53.23s ago] (59,)
+2025-03-28 13:06:17,662 [INFO] COMMIT
+2025-03-28 13:06:17,669 [WARNING] Tentative de suppression d'un produit inexistant (ID: 59).
+2025-03-28 13:06:17,671 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:17] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 13:06:17,681 [INFO] BEGIN (implicit)
+2025-03-28 13:06:17,682 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:17,684 [INFO] [cached since 57.1s ago] ()
+2025-03-28 13:06:17,686 [INFO] ROLLBACK
+2025-03-28 13:06:17,688 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:17] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:06:17,716 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:18,988 [INFO] Page d'accueil demandée.
+2025-03-28 13:06:18,990 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:18] "GET / HTTP/1.1" 200 -
+2025-03-28 13:06:19,079 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:20,016 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:20] "GET /get HTTP/1.1" 200 -
+2025-03-28 13:06:20,080 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:21,385 [INFO] Page d'accueil demandée.
+2025-03-28 13:06:21,388 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:21] "GET / HTTP/1.1" 200 -
+2025-03-28 13:06:21,463 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:22,401 [INFO] BEGIN (implicit)
+2025-03-28 13:06:22,403 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:22,405 [INFO] [cached since 61.82s ago] ()
+2025-03-28 13:06:22,407 [INFO] ROLLBACK
+2025-03-28 13:06:22,408 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-03-28 13:06:22,411 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:22] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:06:22,504 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:23,279 [INFO] Page d'accueil demandée.
+2025-03-28 13:06:23,283 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:23] "GET / HTTP/1.1" 200 -
+2025-03-28 13:06:23,332 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:24,260 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:24] "GET /get HTTP/1.1" 200 -
+2025-03-28 13:06:24,332 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:26,112 [INFO] BEGIN (implicit)
+2025-03-28 13:06:26,114 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:06:26,115 [INFO] [generated in 0.00380s] ('58',)
+2025-03-28 13:06:26,118 [INFO] ROLLBACK
+2025-03-28 13:06:26,118 [INFO] Produit avec ID 58 recherché.
+2025-03-28 13:06:26,120 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:26] "POST /get HTTP/1.1" 200 -
+2025-03-28 13:06:26,179 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:27,928 [INFO] BEGIN (implicit)
+2025-03-28 13:06:27,930 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:06:27,931 [INFO] [cached since 1.82s ago] ('511',)
+2025-03-28 13:06:27,933 [INFO] ROLLBACK
+2025-03-28 13:06:27,935 [WARNING] Tentative d'accès à un produit inexistant (ID: 511).
+2025-03-28 13:06:27,938 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:27] "POST /get HTTP/1.1" 200 -
+2025-03-28 13:06:27,984 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:29,273 [INFO] Page d'accueil demandée.
+2025-03-28 13:06:29,276 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:29] "GET / HTTP/1.1" 200 -
+2025-03-28 13:06:29,315 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:30,355 [INFO] BEGIN (implicit)
+2025-03-28 13:06:30,357 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:30,359 [INFO] [cached since 69.77s ago] ()
+2025-03-28 13:06:30,361 [INFO] ROLLBACK
+2025-03-28 13:06:30,364 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:30] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:06:30,435 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:06:41,286 [INFO] BEGIN (implicit)
+2025-03-28 13:06:41,287 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:41,289 [INFO] [cached since 80.7s ago] ()
+2025-03-28 13:06:41,291 [INFO] ROLLBACK
+2025-03-28 13:06:41,293 [INFO] BEGIN (implicit)
+2025-03-28 13:06:41,295 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 13:06:41,296 [INFO] [cached since 76.86s ago] (58,)
+2025-03-28 13:06:41,302 [INFO] COMMIT
+2025-03-28 13:06:41,307 [WARNING] Tentative de suppression d'un produit inexistant (ID: 58).
+2025-03-28 13:06:41,309 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:41] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 13:06:41,321 [INFO] BEGIN (implicit)
+2025-03-28 13:06:41,323 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:06:41,324 [INFO] [cached since 80.74s ago] ()
+2025-03-28 13:06:41,325 [INFO] ROLLBACK
+2025-03-28 13:06:41,329 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:41] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:06:41,369 [INFO] 127.0.0.1 - - [28/Mar/2025 13:06:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:08:35,770 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:08:35,902 [INFO]  * Restarting with stat
+2025-03-28 13:08:37,947 [WARNING]  * Debugger is active!
+2025-03-28 13:08:37,951 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:08:43,737 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-28 13:08:43,738 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-28 13:08:43,741 [INFO]  * Restarting with stat
+2025-03-28 13:08:45,272 [WARNING]  * Debugger is active!
+2025-03-28 13:08:45,276 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:09:06,881 [INFO] Page d'accueil demandée.
+2025-03-28 13:09:07,094 [INFO] 127.0.0.1 - - [28/Mar/2025 13:09:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-28 13:09:07,514 [INFO] 127.0.0.1 - - [28/Mar/2025 13:09:07] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 13:09:07,514 [INFO] 127.0.0.1 - - [28/Mar/2025 13:09:07] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 13:09:07,600 [INFO] 127.0.0.1 - - [28/Mar/2025 13:09:07] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=FoX5lVwqtskjMOOW0BaQ HTTP/1.1" 200 -
+2025-03-28 13:09:08,079 [INFO] 127.0.0.1 - - [28/Mar/2025 13:09:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 13:10:02,371 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:10:02,519 [INFO]  * Restarting with stat
+2025-03-28 13:10:03,992 [WARNING]  * Debugger is active!
+2025-03-28 13:10:03,997 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:10:04,081 [INFO] Page d'accueil demandée.
+2025-03-28 13:10:04,094 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:04] "GET / HTTP/1.1" 200 -
+2025-03-28 13:10:04,235 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:05,796 [INFO] BEGIN (implicit)
+2025-03-28 13:10:05,798 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:10:05,799 [INFO] [generated in 0.00336s] ()
+2025-03-28 13:10:05,803 [INFO] ROLLBACK
+2025-03-28 13:10:05,817 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:05] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:10:05,882 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:11,681 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:10:11,873 [INFO]  * Restarting with stat
+2025-03-28 13:10:13,275 [WARNING]  * Debugger is active!
+2025-03-28 13:10:13,281 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:10:14,350 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:14] "[33mGET /delete HTTP/1.1[0m" 404 -
+2025-03-28 13:10:17,744 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:17] "[33mGET /delete HTTP/1.1[0m" 404 -
+2025-03-28 13:10:23,149 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:10:23,403 [INFO]  * Restarting with stat
+2025-03-28 13:10:24,902 [WARNING]  * Debugger is active!
+2025-03-28 13:10:24,909 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:10:24,984 [INFO] BEGIN (implicit)
+2025-03-28 13:10:24,985 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:10:24,986 [INFO] [generated in 0.00182s] ()
+2025-03-28 13:10:24,987 [INFO] ROLLBACK
+2025-03-28 13:10:24,998 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:24] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:10:25,086 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:26,830 [INFO] Page d'accueil demandée.
+2025-03-28 13:10:26,839 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:26] "GET / HTTP/1.1" 200 -
+2025-03-28 13:10:26,880 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:27,715 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:27] "GET /create HTTP/1.1" 200 -
+2025-03-28 13:10:27,743 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:31,562 [INFO] BEGIN (implicit)
+2025-03-28 13:10:31,564 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-03-28 13:10:31,565 [INFO] [generated in 0.00238s] ('test', 1.0, 'test')
+2025-03-28 13:10:31,569 [INFO] COMMIT
+2025-03-28 13:10:31,576 [INFO] Produit 'test' créé avec montant 1 et catégorie test.
+2025-03-28 13:10:31,579 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:31] "[32mPOST /create HTTP/1.1[0m" 302 -
+2025-03-28 13:10:31,588 [INFO] Page d'accueil demandée.
+2025-03-28 13:10:31,592 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:31] "GET / HTTP/1.1" 200 -
+2025-03-28 13:10:31,706 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:33,358 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:33] "GET /create HTTP/1.1" 200 -
+2025-03-28 13:10:33,431 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:40,654 [INFO] BEGIN (implicit)
+2025-03-28 13:10:40,656 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-03-28 13:10:40,657 [INFO] [cached since 9.095s ago] ('test2', 2.0, 'test')
+2025-03-28 13:10:40,661 [INFO] COMMIT
+2025-03-28 13:10:40,670 [INFO] Produit 'test2' créé avec montant 2 et catégorie test.
+2025-03-28 13:10:40,673 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:40] "[32mPOST /create HTTP/1.1[0m" 302 -
+2025-03-28 13:10:40,681 [INFO] Page d'accueil demandée.
+2025-03-28 13:10:40,684 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:40] "GET / HTTP/1.1" 200 -
+2025-03-28 13:10:40,808 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:45,244 [INFO] BEGIN (implicit)
+2025-03-28 13:10:45,245 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:10:45,247 [INFO] [cached since 20.26s ago] ()
+2025-03-28 13:10:45,249 [INFO] ROLLBACK
+2025-03-28 13:10:45,253 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:45] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:10:45,430 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:10:48,107 [INFO] Page d'accueil demandée.
+2025-03-28 13:10:48,110 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:48] "GET / HTTP/1.1" 200 -
+2025-03-28 13:10:48,160 [INFO] 127.0.0.1 - - [28/Mar/2025 13:10:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:11:14,831 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:11:14,992 [INFO]  * Restarting with stat
+2025-03-28 13:11:16,533 [WARNING]  * Debugger is active!
+2025-03-28 13:11:16,540 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:11:16,622 [INFO] 127.0.0.1 - - [28/Mar/2025 13:11:16] "[33mGET /delete HTTP/1.1[0m" 404 -
+2025-03-28 13:11:30,653 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:11:30,795 [INFO]  * Restarting with stat
+2025-03-28 13:11:32,203 [WARNING]  * Debugger is active!
+2025-03-28 13:11:32,208 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:11:32,269 [INFO] BEGIN (implicit)
+2025-03-28 13:11:32,270 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:11:32,271 [INFO] [generated in 0.00188s] ()
+2025-03-28 13:11:32,272 [INFO] ROLLBACK
+2025-03-28 13:11:32,282 [INFO] 127.0.0.1 - - [28/Mar/2025 13:11:32] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:11:32,392 [INFO] 127.0.0.1 - - [28/Mar/2025 13:11:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:11:33,511 [INFO] Page d'accueil demandée.
+2025-03-28 13:11:33,516 [INFO] 127.0.0.1 - - [28/Mar/2025 13:11:33] "GET / HTTP/1.1" 200 -
+2025-03-28 13:11:33,568 [INFO] 127.0.0.1 - - [28/Mar/2025 13:11:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:12:44,206 [INFO] BEGIN (implicit)
+2025-03-28 13:12:44,207 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:12:44,208 [INFO] [cached since 71.94s ago] ()
+2025-03-28 13:12:44,210 [INFO] ROLLBACK
+2025-03-28 13:12:44,213 [INFO] 127.0.0.1 - - [28/Mar/2025 13:12:44] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:12:44,416 [INFO] 127.0.0.1 - - [28/Mar/2025 13:12:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:12:45,604 [INFO] Page d'accueil demandée.
+2025-03-28 13:12:45,606 [INFO] 127.0.0.1 - - [28/Mar/2025 13:12:45] "GET / HTTP/1.1" 200 -
+2025-03-28 13:12:45,671 [INFO] 127.0.0.1 - - [28/Mar/2025 13:12:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:13:08,538 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:13:08,680 [INFO]  * Restarting with stat
+2025-03-28 13:13:09,181 [WARNING]  * Debugger is active!
+2025-03-28 13:13:09,186 [INFO]  * Debugger PIN: 491-183-414
+2025-03-28 13:13:24,602 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:13:24,655 [INFO]  * Restarting with stat
+2025-03-28 13:13:26,392 [WARNING]  * Debugger is active!
+2025-03-28 13:13:26,397 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:13:27,260 [INFO] 127.0.0.1 - - [28/Mar/2025 13:13:27] "[33mGET /delete HTTP/1.1[0m" 404 -
+2025-03-28 13:13:42,401 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:13:42,510 [INFO]  * Restarting with stat
+2025-03-28 13:13:44,361 [WARNING]  * Debugger is active!
+2025-03-28 13:13:44,365 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:13:44,418 [INFO] BEGIN (implicit)
+2025-03-28 13:13:44,419 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:13:44,420 [INFO] [generated in 0.00253s] ()
+2025-03-28 13:13:44,422 [INFO] ROLLBACK
+2025-03-28 13:13:44,468 [INFO] 127.0.0.1 - - [28/Mar/2025 13:13:44] "[35m[1mGET /delete HTTP/1.1[0m" 500 -
+2025-03-28 13:13:44,601 [INFO] 127.0.0.1 - - [28/Mar/2025 13:13:44] "[36mGET /delete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:13:44,605 [INFO] 127.0.0.1 - - [28/Mar/2025 13:13:44] "[36mGET /delete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-28 13:13:44,635 [INFO] 127.0.0.1 - - [28/Mar/2025 13:13:44] "GET /delete?__debugger__=yes&cmd=resource&f=console.png&s=YR49T1Qm93eb4JzY6V2I HTTP/1.1" 200 -
+2025-03-28 13:13:44,988 [INFO] 127.0.0.1 - - [28/Mar/2025 13:13:44] "[36mGET /delete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-28 13:14:21,417 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:14:21,531 [INFO]  * Restarting with stat
+2025-03-28 13:14:23,550 [WARNING]  * Debugger is active!
+2025-03-28 13:14:23,559 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:14:24,790 [INFO] BEGIN (implicit)
+2025-03-28 13:14:24,791 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:14:24,793 [INFO] [generated in 0.00298s] ()
+2025-03-28 13:14:24,795 [INFO] ROLLBACK
+2025-03-28 13:14:24,811 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:24] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:14:24,941 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:28,384 [INFO] BEGIN (implicit)
+2025-03-28 13:14:28,388 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:14:28,390 [INFO] [cached since 3.6s ago] ()
+2025-03-28 13:14:28,393 [INFO] ROLLBACK
+2025-03-28 13:14:28,399 [INFO] BEGIN (implicit)
+2025-03-28 13:14:28,400 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:14:28,401 [INFO] [generated in 0.00302s] (61,)
+2025-03-28 13:14:28,406 [INFO] ROLLBACK
+2025-03-28 13:14:28,411 [INFO] BEGIN (implicit)
+2025-03-28 13:14:28,413 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 13:14:28,415 [INFO] [generated in 0.00413s] (61,)
+2025-03-28 13:14:28,423 [INFO] COMMIT
+2025-03-28 13:14:28,438 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:28] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 13:14:28,451 [INFO] BEGIN (implicit)
+2025-03-28 13:14:28,452 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:14:28,453 [INFO] [cached since 3.663s ago] ()
+2025-03-28 13:14:28,455 [INFO] ROLLBACK
+2025-03-28 13:14:28,458 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:28] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:14:28,494 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:30,805 [INFO] Page d'accueil demandée.
+2025-03-28 13:14:30,821 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:30] "GET / HTTP/1.1" 200 -
+2025-03-28 13:14:30,916 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:31,567 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:31] "GET /get HTTP/1.1" 200 -
+2025-03-28 13:14:31,628 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:33,411 [INFO] Page d'accueil demandée.
+2025-03-28 13:14:33,413 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:33] "GET / HTTP/1.1" 200 -
+2025-03-28 13:14:33,488 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:34,069 [INFO] BEGIN (implicit)
+2025-03-28 13:14:34,070 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:14:34,071 [INFO] [cached since 9.282s ago] ()
+2025-03-28 13:14:34,074 [INFO] ROLLBACK
+2025-03-28 13:14:34,075 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-03-28 13:14:34,086 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:34] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:14:34,131 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:36,278 [INFO] Page d'accueil demandée.
+2025-03-28 13:14:36,279 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:36] "GET / HTTP/1.1" 200 -
+2025-03-28 13:14:36,310 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:37,439 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:37] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:14:37,493 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:38,695 [INFO] Page d'accueil demandée.
+2025-03-28 13:14:38,698 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:38] "GET / HTTP/1.1" 200 -
+2025-03-28 13:14:38,769 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:39,975 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:39] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:14:40,038 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:48,342 [INFO] BEGIN (implicit)
+2025-03-28 13:14:48,344 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-03-28 13:14:48,346 [INFO] [generated in 0.00416s] ('sscd', 5.0, 'dcdc', '661')
+2025-03-28 13:14:48,348 [INFO] COMMIT
+2025-03-28 13:14:48,349 [INFO] Produit avec ID 661 mis à jour avec nouveau nom 'sscd', montant 5, catégorie dcdc.
+2025-03-28 13:14:48,352 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:48] "[32mPOST /update HTTP/1.1[0m" 302 -
+2025-03-28 13:14:48,361 [INFO] Page d'accueil demandée.
+2025-03-28 13:14:48,366 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:48] "GET / HTTP/1.1" 200 -
+2025-03-28 13:14:48,439 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:14:56,481 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:56] "GET /create HTTP/1.1" 200 -
+2025-03-28 13:14:56,649 [INFO] 127.0.0.1 - - [28/Mar/2025 13:14:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:01,443 [INFO] BEGIN (implicit)
+2025-03-28 13:15:01,443 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-03-28 13:15:01,446 [INFO] [generated in 0.00214s] ('ballon', 5.0, 'foot')
+2025-03-28 13:15:01,449 [INFO] COMMIT
+2025-03-28 13:15:01,456 [INFO] Produit 'ballon' créé avec montant 5 et catégorie foot.
+2025-03-28 13:15:01,459 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:01] "[32mPOST /create HTTP/1.1[0m" 302 -
+2025-03-28 13:15:01,471 [INFO] Page d'accueil demandée.
+2025-03-28 13:15:01,475 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:01] "GET / HTTP/1.1" 200 -
+2025-03-28 13:15:01,572 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:03,169 [INFO] BEGIN (implicit)
+2025-03-28 13:15:03,170 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:15:03,171 [INFO] [cached since 38.38s ago] ()
+2025-03-28 13:15:03,174 [INFO] ROLLBACK
+2025-03-28 13:15:03,175 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 13:15:03,176 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:03] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:15:03,566 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:04,551 [INFO] Page d'accueil demandée.
+2025-03-28 13:15:04,552 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:04] "GET / HTTP/1.1" 200 -
+2025-03-28 13:15:04,621 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:05,198 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:05] "GET /get HTTP/1.1" 200 -
+2025-03-28 13:15:05,246 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:07,345 [INFO] BEGIN (implicit)
+2025-03-28 13:15:07,348 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:15:07,348 [INFO] [generated in 0.00326s] ('62',)
+2025-03-28 13:15:07,349 [INFO] ROLLBACK
+2025-03-28 13:15:07,351 [INFO] Produit avec ID 62 recherché.
+2025-03-28 13:15:07,352 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:07] "POST /get HTTP/1.1" 200 -
+2025-03-28 13:15:07,387 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:09,121 [INFO] Page d'accueil demandée.
+2025-03-28 13:15:09,122 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:09] "GET / HTTP/1.1" 200 -
+2025-03-28 13:15:09,150 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:10,037 [INFO] BEGIN (implicit)
+2025-03-28 13:15:10,037 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:15:10,038 [INFO] [cached since 45.25s ago] ()
+2025-03-28 13:15:10,039 [INFO] ROLLBACK
+2025-03-28 13:15:10,043 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:10] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:15:10,086 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:13,286 [INFO] Page d'accueil demandée.
+2025-03-28 13:15:13,287 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:13] "GET / HTTP/1.1" 200 -
+2025-03-28 13:15:13,340 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:15,795 [INFO] BEGIN (implicit)
+2025-03-28 13:15:15,796 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:15:15,797 [INFO] [cached since 51.01s ago] ()
+2025-03-28 13:15:15,798 [INFO] ROLLBACK
+2025-03-28 13:15:15,800 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:15] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:15:15,828 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:16,958 [INFO] Page d'accueil demandée.
+2025-03-28 13:15:16,960 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:16] "GET / HTTP/1.1" 200 -
+2025-03-28 13:15:17,046 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:20,645 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:20] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:15:20,719 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:15:23,815 [INFO] Page d'accueil demandée.
+2025-03-28 13:15:23,817 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:23] "GET / HTTP/1.1" 200 -
+2025-03-28 13:15:23,888 [INFO] 127.0.0.1 - - [28/Mar/2025 13:15:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:17:24,547 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:17:24,660 [INFO]  * Restarting with stat
+2025-03-28 13:17:26,370 [WARNING]  * Debugger is active!
+2025-03-28 13:17:26,374 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:17:28,506 [INFO] 127.0.0.1 - - [28/Mar/2025 13:17:28] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:17:28,616 [INFO] 127.0.0.1 - - [28/Mar/2025 13:17:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:17:33,521 [INFO] BEGIN (implicit)
+2025-03-28 13:17:33,523 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:17:33,525 [INFO] [generated in 0.00380s] ('511',)
+2025-03-28 13:17:33,528 [INFO] ROLLBACK
+2025-03-28 13:17:33,561 [INFO] 127.0.0.1 - - [28/Mar/2025 13:17:33] "[35m[1mPOST /update HTTP/1.1[0m" 500 -
+2025-03-28 13:17:33,605 [INFO] 127.0.0.1 - - [28/Mar/2025 13:17:33] "GET /update?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 13:17:33,608 [INFO] 127.0.0.1 - - [28/Mar/2025 13:17:33] "GET /update?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 13:17:33,631 [INFO] 127.0.0.1 - - [28/Mar/2025 13:17:33] "GET /update?__debugger__=yes&cmd=resource&f=console.png&s=KauX4nGQwcECUoLQdn6K HTTP/1.1" 200 -
+2025-03-28 13:17:33,805 [INFO] 127.0.0.1 - - [28/Mar/2025 13:17:33] "GET /update?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 13:19:17,229 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:19:17,413 [INFO]  * Restarting with stat
+2025-03-28 13:19:19,048 [WARNING]  * Debugger is active!
+2025-03-28 13:19:19,056 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:19:20,504 [INFO] BEGIN (implicit)
+2025-03-28 13:19:20,505 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:19:20,506 [INFO] [generated in 0.00204s] ('511',)
+2025-03-28 13:19:20,509 [INFO] ROLLBACK
+2025-03-28 13:19:20,511 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:20] "[32mPOST /update HTTP/1.1[0m" 302 -
+2025-03-28 13:19:20,530 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:20] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:19:20,636 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:23,096 [INFO] Page d'accueil demandée.
+2025-03-28 13:19:23,119 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:23] "GET / HTTP/1.1" 200 -
+2025-03-28 13:19:23,183 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:24,421 [INFO] BEGIN (implicit)
+2025-03-28 13:19:24,423 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:19:24,424 [INFO] [generated in 0.00323s] ()
+2025-03-28 13:19:24,426 [INFO] ROLLBACK
+2025-03-28 13:19:24,428 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 13:19:24,444 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:24] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:19:24,513 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:25,613 [INFO] Page d'accueil demandée.
+2025-03-28 13:19:25,616 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:25] "GET / HTTP/1.1" 200 -
+2025-03-28 13:19:25,688 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:27,019 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:27] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:19:27,075 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:34,346 [INFO] BEGIN (implicit)
+2025-03-28 13:19:34,347 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:19:34,348 [INFO] [cached since 13.84s ago] ('62',)
+2025-03-28 13:19:34,350 [INFO] ROLLBACK
+2025-03-28 13:19:34,354 [INFO] BEGIN (implicit)
+2025-03-28 13:19:34,355 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-03-28 13:19:34,357 [INFO] [generated in 0.00259s] ('ballon', 100.0, 'football', '62')
+2025-03-28 13:19:34,363 [INFO] COMMIT
+2025-03-28 13:19:34,372 [INFO] Produit avec ID 62 mis à jour avec nouveau nom 'ballon', montant 100, catégorie football.
+2025-03-28 13:19:34,374 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:34] "[32mPOST /update HTTP/1.1[0m" 302 -
+2025-03-28 13:19:34,384 [INFO] Page d'accueil demandée.
+2025-03-28 13:19:34,387 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:34] "GET / HTTP/1.1" 200 -
+2025-03-28 13:19:34,468 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:36,415 [INFO] BEGIN (implicit)
+2025-03-28 13:19:36,416 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:19:36,418 [INFO] [cached since 12s ago] ()
+2025-03-28 13:19:36,420 [INFO] ROLLBACK
+2025-03-28 13:19:36,422 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 13:19:36,425 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:36] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:19:36,499 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:37,585 [INFO] Page d'accueil demandée.
+2025-03-28 13:19:37,586 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:37] "GET / HTTP/1.1" 200 -
+2025-03-28 13:19:37,640 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:38,757 [INFO] BEGIN (implicit)
+2025-03-28 13:19:38,758 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:19:38,759 [INFO] [cached since 14.34s ago] ()
+2025-03-28 13:19:38,760 [INFO] ROLLBACK
+2025-03-28 13:19:38,761 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 13:19:38,763 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:38] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:19:38,853 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:40,170 [INFO] Page d'accueil demandée.
+2025-03-28 13:19:40,173 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:40] "GET / HTTP/1.1" 200 -
+2025-03-28 13:19:40,250 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:41,190 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:41] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:19:41,333 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:42,590 [INFO] Page d'accueil demandée.
+2025-03-28 13:19:42,593 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:42] "GET / HTTP/1.1" 200 -
+2025-03-28 13:19:42,663 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:43,626 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:43] "GET /create HTTP/1.1" 200 -
+2025-03-28 13:19:43,686 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:19:44,941 [INFO] Page d'accueil demandée.
+2025-03-28 13:19:44,943 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:44] "GET / HTTP/1.1" 200 -
+2025-03-28 13:19:45,012 [INFO] 127.0.0.1 - - [28/Mar/2025 13:19:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:20:23,315 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-03-28 13:20:23,415 [INFO]  * Restarting with stat
+2025-03-28 13:20:25,332 [WARNING]  * Debugger is active!
+2025-03-28 13:20:25,338 [INFO]  * Debugger PIN: 110-811-118
+2025-03-28 13:20:25,750 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:25] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:20:25,870 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:20:32,190 [INFO] Page d'accueil demandée.
+2025-03-28 13:20:32,214 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:32] "GET / HTTP/1.1" 200 -
+2025-03-28 13:20:32,256 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:20:32,819 [INFO] BEGIN (implicit)
+2025-03-28 13:20:32,821 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:20:32,822 [INFO] [generated in 0.00225s] ()
+2025-03-28 13:20:32,823 [INFO] ROLLBACK
+2025-03-28 13:20:32,824 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 13:20:32,830 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:32] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:20:32,868 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:20:34,403 [INFO] Page d'accueil demandée.
+2025-03-28 13:20:34,405 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:34] "GET / HTTP/1.1" 200 -
+2025-03-28 13:20:34,487 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:20:35,631 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:35] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:20:35,772 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:20:44,578 [INFO] BEGIN (implicit)
+2025-03-28 13:20:44,579 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:20:44,581 [INFO] [generated in 0.00272s] ('62',)
+2025-03-28 13:20:44,583 [INFO] ROLLBACK
+2025-03-28 13:20:44,588 [INFO] BEGIN (implicit)
+2025-03-28 13:20:44,590 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-03-28 13:20:44,592 [INFO] [generated in 0.00412s] ('ballon', 555.0, 'foot', '62')
+2025-03-28 13:20:44,597 [INFO] COMMIT
+2025-03-28 13:20:44,607 [INFO] Produit avec ID 62 mis à jour avec nouveau nom 'ballon', montant 555, catégorie foot.
+2025-03-28 13:20:44,610 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:44] "[32mPOST /update HTTP/1.1[0m" 302 -
+2025-03-28 13:20:44,622 [INFO] Page d'accueil demandée.
+2025-03-28 13:20:44,626 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:44] "GET / HTTP/1.1" 200 -
+2025-03-28 13:20:44,740 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:20:46,939 [INFO] BEGIN (implicit)
+2025-03-28 13:20:46,940 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:20:46,942 [INFO] [cached since 14.12s ago] ()
+2025-03-28 13:20:46,945 [INFO] ROLLBACK
+2025-03-28 13:20:46,947 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-03-28 13:20:46,950 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:46] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:20:47,027 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:20:48,204 [INFO] Page d'accueil demandée.
+2025-03-28 13:20:48,207 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:48] "GET / HTTP/1.1" 200 -
+2025-03-28 13:20:48,315 [INFO] 127.0.0.1 - - [28/Mar/2025 13:20:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:35,047 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:35] "GET /update HTTP/1.1" 200 -
+2025-03-28 13:21:35,097 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:36,121 [INFO] Page d'accueil demandée.
+2025-03-28 13:21:36,123 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:36] "GET / HTTP/1.1" 200 -
+2025-03-28 13:21:36,173 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:36,959 [INFO] BEGIN (implicit)
+2025-03-28 13:21:36,960 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:21:36,961 [INFO] [cached since 64.14s ago] ()
+2025-03-28 13:21:36,963 [INFO] ROLLBACK
+2025-03-28 13:21:36,977 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:36] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:21:37,043 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:39,269 [INFO] BEGIN (implicit)
+2025-03-28 13:21:39,271 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:21:39,272 [INFO] [cached since 66.45s ago] ()
+2025-03-28 13:21:39,273 [INFO] ROLLBACK
+2025-03-28 13:21:39,275 [INFO] BEGIN (implicit)
+2025-03-28 13:21:39,276 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-03-28 13:21:39,277 [INFO] [generated in 0.00168s] (60,)
+2025-03-28 13:21:39,277 [INFO] ROLLBACK
+2025-03-28 13:21:39,280 [INFO] BEGIN (implicit)
+2025-03-28 13:21:39,281 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-28 13:21:39,282 [INFO] [generated in 0.00199s] (60,)
+2025-03-28 13:21:39,286 [INFO] COMMIT
+2025-03-28 13:21:39,293 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:39] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-03-28 13:21:39,302 [INFO] BEGIN (implicit)
+2025-03-28 13:21:39,303 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:21:39,305 [INFO] [cached since 66.49s ago] ()
+2025-03-28 13:21:39,306 [INFO] ROLLBACK
+2025-03-28 13:21:39,309 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:39] "GET /delete HTTP/1.1" 200 -
+2025-03-28 13:21:39,350 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:40,359 [INFO] Page d'accueil demandée.
+2025-03-28 13:21:40,361 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:40] "GET / HTTP/1.1" 200 -
+2025-03-28 13:21:40,467 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:41,167 [INFO] BEGIN (implicit)
+2025-03-28 13:21:41,168 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-28 13:21:41,168 [INFO] [cached since 68.35s ago] ()
+2025-03-28 13:21:41,169 [INFO] ROLLBACK
+2025-03-28 13:21:41,171 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-03-28 13:21:41,172 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:41] "GET /get_all HTTP/1.1" 200 -
+2025-03-28 13:21:41,221 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:41,845 [INFO] Page d'accueil demandée.
+2025-03-28 13:21:41,847 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:41] "GET / HTTP/1.1" 200 -
+2025-03-28 13:21:41,880 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:42,697 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:42] "GET /get HTTP/1.1" 200 -
+2025-03-28 13:21:42,742 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:43,451 [INFO] Page d'accueil demandée.
+2025-03-28 13:21:43,452 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:43] "GET / HTTP/1.1" 200 -
+2025-03-28 13:21:43,503 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:44,985 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:44] "GET /import_csv HTTP/1.1" 200 -
+2025-03-28 13:21:45,032 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-03-28 13:21:46,756 [INFO] Page d'accueil demandée.
+2025-03-28 13:21:46,758 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:46] "GET / HTTP/1.1" 200 -
+2025-03-28 13:21:46,830 [INFO] 127.0.0.1 - - [28/Mar/2025 13:21:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:33:48,998 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 18:33:48,999 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-01 18:33:49,005 [INFO]  * Restarting with stat
+2025-04-01 18:33:49,525 [WARNING]  * Debugger is active!
+2025-04-01 18:33:49,527 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 18:34:18,770 [INFO] Page d'accueil demandée.
+2025-04-01 18:34:18,785 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:18] "GET / HTTP/1.1" 200 -
+2025-04-01 18:34:18,895 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:18] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-01 18:34:19,092 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 18:34:20,656 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:20] "GET /create HTTP/1.1" 200 -
+2025-04-01 18:34:20,682 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:23,205 [INFO] BEGIN (implicit)
+2025-04-01 18:34:23,205 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:34:23,205 [INFO] [generated in 0.00072s] ()
+2025-04-01 18:34:23,207 [INFO] ROLLBACK
+2025-04-01 18:34:23,210 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:23] "GET /delete HTTP/1.1" 200 -
+2025-04-01 18:34:23,226 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:27,609 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:27] "GET /get HTTP/1.1" 200 -
+2025-04-01 18:34:27,631 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:29,585 [INFO] BEGIN (implicit)
+2025-04-01 18:34:29,586 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:34:29,586 [INFO] [cached since 6.382s ago] ()
+2025-04-01 18:34:29,587 [INFO] ROLLBACK
+2025-04-01 18:34:29,587 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-01 18:34:29,622 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:29] "GET /get_all HTTP/1.1" 200 -
+2025-04-01 18:34:29,640 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:31,865 [INFO] BEGIN (implicit)
+2025-04-01 18:34:31,866 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:34:31,866 [INFO] [cached since 8.662s ago] ()
+2025-04-01 18:34:31,867 [INFO] ROLLBACK
+2025-04-01 18:34:31,868 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:31] "GET /delete HTTP/1.1" 200 -
+2025-04-01 18:34:31,885 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:33,416 [INFO] Page d'accueil demandée.
+2025-04-01 18:34:33,416 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:33] "GET / HTTP/1.1" 200 -
+2025-04-01 18:34:33,435 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:34,155 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:34] "GET /create HTTP/1.1" 200 -
+2025-04-01 18:34:34,172 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:38,205 [INFO] BEGIN (implicit)
+2025-04-01 18:34:38,205 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-01 18:34:38,205 [INFO] [generated in 0.00059s] ('test', 100.0, 'test')
+2025-04-01 18:34:38,206 [INFO] COMMIT
+2025-04-01 18:34:38,209 [INFO] Produit 'test' créé avec montant 100 et catégorie test.
+2025-04-01 18:34:38,210 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:38] "[32mPOST /create HTTP/1.1[0m" 302 -
+2025-04-01 18:34:38,214 [INFO] Page d'accueil demandée.
+2025-04-01 18:34:38,216 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:38] "GET / HTTP/1.1" 200 -
+2025-04-01 18:34:38,243 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:39,436 [INFO] BEGIN (implicit)
+2025-04-01 18:34:39,436 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:34:39,438 [INFO] [cached since 16.23s ago] ()
+2025-04-01 18:34:39,439 [INFO] ROLLBACK
+2025-04-01 18:34:39,440 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:39] "GET /delete HTTP/1.1" 200 -
+2025-04-01 18:34:39,457 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:41,903 [INFO] Page d'accueil demandée.
+2025-04-01 18:34:41,904 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:41] "GET / HTTP/1.1" 200 -
+2025-04-01 18:34:41,922 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:42,946 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:42] "GET /get HTTP/1.1" 200 -
+2025-04-01 18:34:42,963 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:44,776 [INFO] BEGIN (implicit)
+2025-04-01 18:34:44,776 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:34:44,777 [INFO] [generated in 0.00106s] ('88',)
+2025-04-01 18:34:44,778 [INFO] ROLLBACK
+2025-04-01 18:34:44,778 [WARNING] Tentative d'accès à un produit inexistant (ID: 88).
+2025-04-01 18:34:44,779 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:44] "POST /get HTTP/1.1" 200 -
+2025-04-01 18:34:44,797 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:46,741 [INFO] BEGIN (implicit)
+2025-04-01 18:34:46,741 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:34:46,742 [INFO] [cached since 1.966s ago] ('89',)
+2025-04-01 18:34:46,742 [INFO] ROLLBACK
+2025-04-01 18:34:46,743 [WARNING] Tentative d'accès à un produit inexistant (ID: 89).
+2025-04-01 18:34:46,743 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:46] "POST /get HTTP/1.1" 200 -
+2025-04-01 18:34:46,755 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:48,359 [INFO] BEGIN (implicit)
+2025-04-01 18:34:48,359 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:34:48,360 [INFO] [cached since 3.585s ago] ('86',)
+2025-04-01 18:34:48,360 [INFO] ROLLBACK
+2025-04-01 18:34:48,361 [WARNING] Tentative d'accès à un produit inexistant (ID: 86).
+2025-04-01 18:34:48,362 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:48] "POST /get HTTP/1.1" 200 -
+2025-04-01 18:34:48,376 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:49,907 [INFO] BEGIN (implicit)
+2025-04-01 18:34:49,908 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:34:49,908 [INFO] [cached since 5.133s ago] ('84',)
+2025-04-01 18:34:49,909 [INFO] ROLLBACK
+2025-04-01 18:34:49,909 [WARNING] Tentative d'accès à un produit inexistant (ID: 84).
+2025-04-01 18:34:49,910 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:49] "POST /get HTTP/1.1" 200 -
+2025-04-01 18:34:49,924 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:51,406 [INFO] BEGIN (implicit)
+2025-04-01 18:34:51,408 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:34:51,409 [INFO] [cached since 6.633s ago] ('82',)
+2025-04-01 18:34:51,409 [INFO] ROLLBACK
+2025-04-01 18:34:51,410 [WARNING] Tentative d'accès à un produit inexistant (ID: 82).
+2025-04-01 18:34:51,411 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:51] "POST /get HTTP/1.1" 200 -
+2025-04-01 18:34:51,425 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:53,233 [INFO] BEGIN (implicit)
+2025-04-01 18:34:53,234 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:34:53,234 [INFO] [cached since 8.459s ago] ('80',)
+2025-04-01 18:34:53,235 [INFO] ROLLBACK
+2025-04-01 18:34:53,235 [WARNING] Tentative d'accès à un produit inexistant (ID: 80).
+2025-04-01 18:34:53,236 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:53] "POST /get HTTP/1.1" 200 -
+2025-04-01 18:34:53,253 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:54,378 [INFO] Page d'accueil demandée.
+2025-04-01 18:34:54,379 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:54] "GET / HTTP/1.1" 200 -
+2025-04-01 18:34:54,397 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:55,242 [INFO] BEGIN (implicit)
+2025-04-01 18:34:55,243 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:34:55,243 [INFO] [cached since 32.04s ago] ()
+2025-04-01 18:34:55,243 [INFO] ROLLBACK
+2025-04-01 18:34:55,243 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-04-01 18:34:55,244 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:55] "GET /get_all HTTP/1.1" 200 -
+2025-04-01 18:34:55,260 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:56,860 [INFO] Page d'accueil demandée.
+2025-04-01 18:34:56,861 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:56] "GET / HTTP/1.1" 200 -
+2025-04-01 18:34:56,882 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:57,819 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:57] "GET /get HTTP/1.1" 200 -
+2025-04-01 18:34:57,837 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:34:59,988 [INFO] BEGIN (implicit)
+2025-04-01 18:34:59,988 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:34:59,989 [INFO] [cached since 15.21s ago] ('62',)
+2025-04-01 18:34:59,990 [INFO] ROLLBACK
+2025-04-01 18:34:59,991 [INFO] Produit avec ID 62 recherché.
+2025-04-01 18:34:59,991 [INFO] 127.0.0.1 - - [01/Apr/2025 18:34:59] "POST /get HTTP/1.1" 200 -
+2025-04-01 18:35:00,011 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:01,787 [INFO] Page d'accueil demandée.
+2025-04-01 18:35:01,788 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:01] "GET / HTTP/1.1" 200 -
+2025-04-01 18:35:01,800 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:02,912 [INFO] BEGIN (implicit)
+2025-04-01 18:35:02,913 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:35:02,913 [INFO] [cached since 39.71s ago] ()
+2025-04-01 18:35:02,914 [INFO] ROLLBACK
+2025-04-01 18:35:02,915 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:02] "GET /delete HTTP/1.1" 200 -
+2025-04-01 18:35:02,932 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:04,014 [INFO] Page d'accueil demandée.
+2025-04-01 18:35:04,014 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:04] "GET / HTTP/1.1" 200 -
+2025-04-01 18:35:04,033 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:05,237 [INFO] BEGIN (implicit)
+2025-04-01 18:35:05,238 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:35:05,238 [INFO] [cached since 42.03s ago] ()
+2025-04-01 18:35:05,238 [INFO] ROLLBACK
+2025-04-01 18:35:05,238 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-04-01 18:35:05,239 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:05] "GET /get_all HTTP/1.1" 200 -
+2025-04-01 18:35:05,256 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:06,456 [INFO] Page d'accueil demandée.
+2025-04-01 18:35:06,457 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:06] "GET / HTTP/1.1" 200 -
+2025-04-01 18:35:06,476 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:07,305 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:07] "GET /update HTTP/1.1" 200 -
+2025-04-01 18:35:07,324 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:14,222 [INFO] BEGIN (implicit)
+2025-04-01 18:35:14,223 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:35:14,223 [INFO] [cached since 29.45s ago] ('63',)
+2025-04-01 18:35:14,224 [INFO] ROLLBACK
+2025-04-01 18:35:14,225 [INFO] BEGIN (implicit)
+2025-04-01 18:35:14,226 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-01 18:35:14,226 [INFO] [generated in 0.00067s] ('test', 150.0, 'test', '63')
+2025-04-01 18:35:14,227 [INFO] COMMIT
+2025-04-01 18:35:14,229 [INFO] Produit avec ID 63 mis à jour avec nouveau nom 'test', montant 150, catégorie test.
+2025-04-01 18:35:14,230 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:14] "[32mPOST /update HTTP/1.1[0m" 302 -
+2025-04-01 18:35:14,234 [INFO] Page d'accueil demandée.
+2025-04-01 18:35:14,235 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:14] "GET / HTTP/1.1" 200 -
+2025-04-01 18:35:14,260 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:15,433 [INFO] BEGIN (implicit)
+2025-04-01 18:35:15,433 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:35:15,434 [INFO] [cached since 52.23s ago] ()
+2025-04-01 18:35:15,434 [INFO] ROLLBACK
+2025-04-01 18:35:15,434 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-04-01 18:35:15,434 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:15] "GET /get_all HTTP/1.1" 200 -
+2025-04-01 18:35:15,453 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:16,532 [INFO] Page d'accueil demandée.
+2025-04-01 18:35:16,533 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:16] "GET / HTTP/1.1" 200 -
+2025-04-01 18:35:16,550 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:18,423 [INFO] BEGIN (implicit)
+2025-04-01 18:35:18,423 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:35:18,423 [INFO] [cached since 55.22s ago] ()
+2025-04-01 18:35:18,424 [INFO] ROLLBACK
+2025-04-01 18:35:18,425 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:18] "GET /delete HTTP/1.1" 200 -
+2025-04-01 18:35:18,442 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:20,324 [INFO] BEGIN (implicit)
+2025-04-01 18:35:20,325 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:35:20,325 [INFO] [cached since 57.12s ago] ()
+2025-04-01 18:35:20,326 [INFO] ROLLBACK
+2025-04-01 18:35:20,327 [INFO] BEGIN (implicit)
+2025-04-01 18:35:20,327 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-01 18:35:20,327 [INFO] [generated in 0.00057s] (63,)
+2025-04-01 18:35:20,327 [INFO] ROLLBACK
+2025-04-01 18:35:20,328 [INFO] BEGIN (implicit)
+2025-04-01 18:35:20,329 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-01 18:35:20,329 [INFO] [generated in 0.00052s] (63,)
+2025-04-01 18:35:20,330 [INFO] COMMIT
+2025-04-01 18:35:20,333 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:20] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-04-01 18:35:20,337 [INFO] BEGIN (implicit)
+2025-04-01 18:35:20,339 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:35:20,339 [INFO] [cached since 57.13s ago] ()
+2025-04-01 18:35:20,340 [INFO] ROLLBACK
+2025-04-01 18:35:20,341 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:20] "GET /delete HTTP/1.1" 200 -
+2025-04-01 18:35:20,358 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:21,105 [INFO] Page d'accueil demandée.
+2025-04-01 18:35:21,106 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:21] "GET / HTTP/1.1" 200 -
+2025-04-01 18:35:21,129 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:21,897 [INFO] BEGIN (implicit)
+2025-04-01 18:35:21,898 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:35:21,898 [INFO] [cached since 58.69s ago] ()
+2025-04-01 18:35:21,899 [INFO] ROLLBACK
+2025-04-01 18:35:21,899 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-01 18:35:21,900 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:21] "GET /get_all HTTP/1.1" 200 -
+2025-04-01 18:35:21,920 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:35:22,878 [INFO] Page d'accueil demandée.
+2025-04-01 18:35:22,878 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:22] "GET / HTTP/1.1" 200 -
+2025-04-01 18:35:22,903 [INFO] 127.0.0.1 - - [01/Apr/2025 18:35:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:51:39,845 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-01 18:51:39,997 [INFO]  * Restarting with stat
+2025-04-01 18:51:40,808 [WARNING]  * Debugger is active!
+2025-04-01 18:51:40,810 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 18:51:53,097 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-01 18:51:53,182 [INFO]  * Restarting with stat
+2025-04-01 18:51:53,814 [WARNING]  * Debugger is active!
+2025-04-01 18:51:53,816 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 18:52:32,499 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-01 18:52:32,546 [INFO]  * Restarting with stat
+2025-04-01 18:52:33,174 [WARNING]  * Debugger is active!
+2025-04-01 18:52:33,177 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 18:52:35,114 [INFO] Page d'accueil demandée.
+2025-04-01 18:52:35,121 [INFO] 127.0.0.1 - - [01/Apr/2025 18:52:35] "GET / HTTP/1.1" 200 -
+2025-04-01 18:52:35,170 [INFO] 127.0.0.1 - - [01/Apr/2025 18:52:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:52:36,554 [INFO] 127.0.0.1 - - [01/Apr/2025 18:52:36] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 18:52:46,997 [INFO] 127.0.0.1 - - [01/Apr/2025 18:52:46] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 18:52:56,037 [INFO] 127.0.0.1 - - [01/Apr/2025 18:52:56] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 18:52:57,279 [INFO] 127.0.0.1 - - [01/Apr/2025 18:52:57] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 18:52:59,950 [INFO] 127.0.0.1 - - [01/Apr/2025 18:52:59] "GET /get HTTP/1.1" 200 -
+2025-04-01 18:52:59,967 [INFO] 127.0.0.1 - - [01/Apr/2025 18:52:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:53:02,051 [INFO] BEGIN (implicit)
+2025-04-01 18:53:02,051 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:53:02,051 [INFO] [generated in 0.00091s] ()
+2025-04-01 18:53:02,052 [INFO] ROLLBACK
+2025-04-01 18:53:02,052 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-01 18:53:02,056 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:02] "GET /get_all HTTP/1.1" 200 -
+2025-04-01 18:53:02,073 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:53:03,940 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:03] "[31m[1mGET /update HTTP/1.1[0m" 401 -
+2025-04-01 18:53:18,313 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:18] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 18:53:22,327 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:22] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:53:49,563 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:49] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:53:51,739 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:51] "GET /get HTTP/1.1" 200 -
+2025-04-01 18:53:51,757 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:53:53,529 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:53] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:53:54,615 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:54] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:53:55,451 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:55] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:53:56,602 [INFO] Page d'accueil demandée.
+2025-04-01 18:53:56,603 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:56] "GET / HTTP/1.1" 200 -
+2025-04-01 18:53:56,617 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:53:57,696 [INFO] 127.0.0.1 - - [01/Apr/2025 18:53:57] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:54:03,538 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 18:54:03,539 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-01 18:54:03,540 [INFO]  * Restarting with stat
+2025-04-01 18:54:04,087 [WARNING]  * Debugger is active!
+2025-04-01 18:54:04,090 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 18:54:05,202 [INFO] Page d'accueil demandée.
+2025-04-01 18:54:05,208 [INFO] 127.0.0.1 - - [01/Apr/2025 18:54:05] "GET / HTTP/1.1" 200 -
+2025-04-01 18:54:05,285 [INFO] 127.0.0.1 - - [01/Apr/2025 18:54:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:54:06,435 [INFO] 127.0.0.1 - - [01/Apr/2025 18:54:06] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:54:12,656 [INFO] 127.0.0.1 - - [01/Apr/2025 18:54:12] "[31m[1mGET /update HTTP/1.1[0m" 403 -
+2025-04-01 18:54:19,054 [INFO] 127.0.0.1 - - [01/Apr/2025 18:54:19] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:58:30,185 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 18:58:30,186 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-01 18:58:30,187 [INFO]  * Restarting with stat
+2025-04-01 18:58:30,902 [WARNING]  * Debugger is active!
+2025-04-01 18:58:30,904 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 18:58:38,516 [INFO] Page d'accueil demandée.
+2025-04-01 18:58:38,522 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:38] "GET / HTTP/1.1" 200 -
+2025-04-01 18:58:38,601 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:58:40,231 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:40] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 18:58:55,539 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-01 18:58:55,595 [INFO]  * Restarting with stat
+2025-04-01 18:58:56,232 [WARNING]  * Debugger is active!
+2025-04-01 18:58:56,234 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 18:58:56,559 [INFO] BEGIN (implicit)
+2025-04-01 18:58:56,559 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:58:56,560 [INFO] [generated in 0.00106s] ()
+2025-04-01 18:58:56,561 [INFO] ROLLBACK
+2025-04-01 18:58:56,565 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:56] "GET /delete HTTP/1.1" 200 -
+2025-04-01 18:58:56,603 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:58:57,764 [INFO] Page d'accueil demandée.
+2025-04-01 18:58:57,768 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:57] "GET / HTTP/1.1" 200 -
+2025-04-01 18:58:57,786 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:58:59,177 [INFO] BEGIN (implicit)
+2025-04-01 18:58:59,177 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 18:58:59,178 [INFO] [cached since 2.619s ago] ()
+2025-04-01 18:58:59,178 [INFO] ROLLBACK
+2025-04-01 18:58:59,179 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:59] "GET /delete HTTP/1.1" 200 -
+2025-04-01 18:58:59,194 [INFO] 127.0.0.1 - - [01/Apr/2025 18:58:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:59:03,418 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-01 18:59:03,484 [INFO]  * Restarting with stat
+2025-04-01 18:59:04,093 [WARNING]  * Debugger is active!
+2025-04-01 18:59:04,095 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 18:59:05,747 [INFO] Page d'accueil demandée.
+2025-04-01 18:59:05,751 [INFO] 127.0.0.1 - - [01/Apr/2025 18:59:05] "GET / HTTP/1.1" 200 -
+2025-04-01 18:59:05,813 [INFO] 127.0.0.1 - - [01/Apr/2025 18:59:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 18:59:06,642 [INFO] 127.0.0.1 - - [01/Apr/2025 18:59:06] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 19:00:38,570 [INFO] 127.0.0.1 - - [01/Apr/2025 19:00:38] "[31m[1mGET /delete HTTP/1.1[0m" 403 -
+2025-04-01 19:01:23,203 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:23] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:01:23,206 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:23] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:01:24,429 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:24] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:01:24,433 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:24] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:01:26,484 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:26] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:01:33,136 [INFO] BEGIN (implicit)
+2025-04-01 19:01:33,137 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 19:01:33,138 [INFO] [generated in 0.00089s] ()
+2025-04-01 19:01:33,138 [INFO] ROLLBACK
+2025-04-01 19:01:33,141 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:33] "GET /delete HTTP/1.1" 200 -
+2025-04-01 19:01:33,178 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:01:35,681 [INFO] Page d'accueil demandée.
+2025-04-01 19:01:35,683 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:35] "GET / HTTP/1.1" 200 -
+2025-04-01 19:01:35,701 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:01:36,373 [INFO] BEGIN (implicit)
+2025-04-01 19:01:36,373 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 19:01:36,373 [INFO] [cached since 3.236s ago] ()
+2025-04-01 19:01:36,374 [INFO] ROLLBACK
+2025-04-01 19:01:36,375 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:36] "GET /delete HTTP/1.1" 200 -
+2025-04-01 19:01:36,392 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:01:37,156 [INFO] Page d'accueil demandée.
+2025-04-01 19:01:37,157 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:37] "GET / HTTP/1.1" 200 -
+2025-04-01 19:01:37,174 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:01:52,923 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-01 19:01:52,982 [INFO]  * Restarting with stat
+2025-04-01 19:01:53,598 [WARNING]  * Debugger is active!
+2025-04-01 19:01:53,601 [INFO]  * Debugger PIN: 110-811-118
+2025-04-01 19:01:53,823 [INFO] 127.0.0.1 - - [01/Apr/2025 19:01:53] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:02:00,792 [INFO] BEGIN (implicit)
+2025-04-01 19:02:00,793 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 19:02:00,793 [INFO] [generated in 0.00082s] ()
+2025-04-01 19:02:00,794 [INFO] ROLLBACK
+2025-04-01 19:02:00,798 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:00] "GET /delete HTTP/1.1" 200 -
+2025-04-01 19:02:00,860 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:02:02,800 [INFO] Page d'accueil demandée.
+2025-04-01 19:02:02,804 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:02] "GET / HTTP/1.1" 200 -
+2025-04-01 19:02:02,831 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:02:03,838 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:03] "GET /update HTTP/1.1" 200 -
+2025-04-01 19:02:03,857 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:02:05,197 [INFO] Page d'accueil demandée.
+2025-04-01 19:02:05,198 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:05] "GET / HTTP/1.1" 200 -
+2025-04-01 19:02:05,226 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:02:13,187 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:13] "GET /create HTTP/1.1" 200 -
+2025-04-01 19:02:13,204 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:02:23,166 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:23] "GET /create HTTP/1.1" 200 -
+2025-04-01 19:02:23,181 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:02:25,432 [INFO] BEGIN (implicit)
+2025-04-01 19:02:25,433 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-01 19:02:25,433 [INFO] [cached since 24.64s ago] ()
+2025-04-01 19:02:25,434 [INFO] ROLLBACK
+2025-04-01 19:02:25,434 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:25] "GET /delete HTTP/1.1" 200 -
+2025-04-01 19:02:25,450 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:02:28,306 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:28] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:02:28,309 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:28] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:02:29,487 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:29] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:02:29,490 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:29] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-01 19:02:31,288 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:31] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-01 19:02:33,332 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:33] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-01 19:02:35,763 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:35] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-01 19:02:40,531 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:40] "GET /create HTTP/1.1" 200 -
+2025-04-01 19:02:40,550 [INFO] 127.0.0.1 - - [01/Apr/2025 19:02:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-01 19:10:14,726 [INFO] Page d'accueil demandée.
+2025-04-01 19:10:14,727 [INFO] 127.0.0.1 - - [01/Apr/2025 19:10:14] "GET / HTTP/1.1" 200 -
+2025-04-01 19:10:14,751 [INFO] 127.0.0.1 - - [01/Apr/2025 19:10:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

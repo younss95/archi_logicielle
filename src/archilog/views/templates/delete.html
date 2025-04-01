@@ -12,8 +12,9 @@
         {{ form.hidden_tag() }}  <!-- Pour les champs cachés de CSRF -->
         <div>
             {{ form.product_id.label }}<br>
-            {{ form.product_id }}  <!-- Champ select généré par WTForms -->
+            {{ form.product_id }}
         </div>
+
         <button type="submit">{{ form.submit.label }}</button>
     </form>
 
