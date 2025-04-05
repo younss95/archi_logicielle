@@ -56,7 +56,7 @@ def create_product():
     form = CreateProductForm()
 
     if form.validate_on_submit():
-        name = form.name.data
+        name = form.name.datagit
         amount = form.amount.data
         category = form.category.data or None
 
@@ -137,6 +137,7 @@ def update_product():
 
 
 @web_ui.route("/import_csv", methods=["GET", "POST"])
+@auth.login_required(role="admin")  # Seuls les admins peuvent créer un produit
 def import_csv():
     if request.method == "POST":
         file = request.files.get("csv_file")

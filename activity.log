@@ -1807,3 +1807,242 @@ FROM entries
 2025-04-01 19:10:14,726 [INFO] Page d'accueil demandée.
 2025-04-01 19:10:14,727 [INFO] 127.0.0.1 - - [01/Apr/2025 19:10:14] "GET / HTTP/1.1" 200 -
 2025-04-01 19:10:14,751 [INFO] 127.0.0.1 - - [01/Apr/2025 19:10:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:33:45,587 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-05 13:33:45,588 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-05 13:33:45,613 [INFO]  * Restarting with stat
+2025-04-05 13:33:47,062 [WARNING]  * Debugger is active!
+2025-04-05 13:33:47,066 [INFO]  * Debugger PIN: 110-811-118
+2025-04-05 13:34:31,596 [INFO] Page d'accueil demandée.
+2025-04-05 13:34:31,646 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:31] "GET / HTTP/1.1" 200 -
+2025-04-05 13:34:32,182 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:32] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-05 13:34:32,426 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-05 13:34:33,353 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:33] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:34:39,900 [INFO] BEGIN (implicit)
+2025-04-05 13:34:39,900 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-05 13:34:39,901 [INFO] [generated in 0.00136s] ()
+2025-04-05 13:34:39,904 [INFO] ROLLBACK
+2025-04-05 13:34:39,911 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:39] "GET /delete HTTP/1.1" 200 -
+2025-04-05 13:34:39,977 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:34:41,560 [INFO] Page d'accueil demandée.
+2025-04-05 13:34:41,562 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:41] "GET / HTTP/1.1" 200 -
+2025-04-05 13:34:41,631 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:34:42,736 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:42] "GET /create HTTP/1.1" 200 -
+2025-04-05 13:34:42,786 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:34:44,099 [INFO] Page d'accueil demandée.
+2025-04-05 13:34:44,101 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:44] "GET / HTTP/1.1" 200 -
+2025-04-05 13:34:44,176 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:34:48,441 [INFO] Page d'accueil demandée.
+2025-04-05 13:34:48,442 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:48] "GET / HTTP/1.1" 200 -
+2025-04-05 13:34:48,487 [INFO] 127.0.0.1 - - [05/Apr/2025 13:34:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:35:31,921 [INFO] Page d'accueil demandée.
+2025-04-05 13:35:31,922 [INFO] 127.0.0.1 - - [05/Apr/2025 13:35:31] "GET / HTTP/1.1" 200 -
+2025-04-05 13:35:32,017 [INFO] 127.0.0.1 - - [05/Apr/2025 13:35:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:35:33,428 [INFO] 127.0.0.1 - - [05/Apr/2025 13:35:33] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:35:33,433 [INFO] 127.0.0.1 - - [05/Apr/2025 13:35:33] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:35:36,015 [INFO] 127.0.0.1 - - [05/Apr/2025 13:35:36] "GET /get HTTP/1.1" 200 -
+2025-04-05 13:35:36,106 [INFO] 127.0.0.1 - - [05/Apr/2025 13:35:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:37:10,781 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-05 13:37:10,911 [INFO]  * Restarting with stat
+2025-04-05 13:37:12,842 [WARNING]  * Debugger is active!
+2025-04-05 13:37:12,848 [INFO]  * Debugger PIN: 110-811-118
+2025-04-05 13:37:26,076 [INFO] Page d'accueil demandée.
+2025-04-05 13:37:26,100 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:26] "GET / HTTP/1.1" 200 -
+2025-04-05 13:37:26,352 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:37:27,551 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:27] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:37:27,574 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:27] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:37:30,392 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:30] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:37:30,398 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:30] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:37:31,332 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:31] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:37:31,339 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:31] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:37:33,918 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:33] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:37:33,925 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:33] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:37:36,862 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:36] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:37:36,872 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:36] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:37:38,772 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:38] "GET /get HTTP/1.1" 200 -
+2025-04-05 13:37:38,830 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:37:42,778 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:42] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:37:42,792 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:42] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:37:45,327 [INFO] BEGIN (implicit)
+2025-04-05 13:37:45,328 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-05 13:37:45,330 [INFO] [generated in 0.00273s] ()
+2025-04-05 13:37:45,333 [INFO] ROLLBACK
+2025-04-05 13:37:45,334 [INFO] Export des données en CSV demandé.
+2025-04-05 13:37:45,336 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:45] "GET /export_csv HTTP/1.1" 200 -
+2025-04-05 13:37:47,125 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:47] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:37:47,130 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:47] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:37:48,229 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:48] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:37:48,236 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:48] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:37:57,872 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:57] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:37:57,887 [INFO] 127.0.0.1 - - [05/Apr/2025 13:37:57] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:00,917 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:00] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:00,922 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:00] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:04,847 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:04] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:04,855 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:04] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:09,065 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:09] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:09,078 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:09] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:10,426 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:10] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:10,445 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:10] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:13,405 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:13] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:13,415 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:13] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:16,264 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:16] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:16,273 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:16] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:38:18,827 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:18] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:38:18,838 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:18] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:38:22,307 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:22] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:38:22,317 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:22] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:38:26,798 [INFO] Page d'accueil demandée.
+2025-04-05 13:38:26,800 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:26] "GET / HTTP/1.1" 200 -
+2025-04-05 13:38:26,891 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:38:29,084 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:29] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:38:29,096 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:29] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:38:31,623 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:31] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:38:31,632 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:31] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:38:33,780 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:33] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:38:33,788 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:33] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:38:36,155 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:36] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:38:36,164 [INFO] 127.0.0.1 - - [05/Apr/2025 13:38:36] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:38:46,207 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-05 13:38:46,333 [INFO]  * Restarting with stat
+2025-04-05 13:38:47,898 [WARNING]  * Debugger is active!
+2025-04-05 13:38:47,904 [INFO]  * Debugger PIN: 110-811-118
+2025-04-05 13:38:56,758 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-05 13:38:56,759 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-05 13:38:56,764 [INFO]  * Restarting with stat
+2025-04-05 13:38:58,423 [WARNING]  * Debugger is active!
+2025-04-05 13:38:58,428 [INFO]  * Debugger PIN: 110-811-118
+2025-04-05 13:39:01,162 [INFO] Page d'accueil demandée.
+2025-04-05 13:39:01,176 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:01] "GET / HTTP/1.1" 200 -
+2025-04-05 13:39:01,785 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:39:03,620 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:03] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:39:06,844 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:06] "GET /import_csv HTTP/1.1" 200 -
+2025-04-05 13:39:06,916 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:39:16,802 [INFO] Page d'accueil demandée.
+2025-04-05 13:39:16,803 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:16] "GET / HTTP/1.1" 200 -
+2025-04-05 13:39:16,879 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:39:48,920 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:48] "GET /import_csv HTTP/1.1" 200 -
+2025-04-05 13:39:49,017 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:39:51,193 [INFO] Page d'accueil demandée.
+2025-04-05 13:39:51,195 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:51] "GET / HTTP/1.1" 200 -
+2025-04-05 13:39:51,269 [INFO] 127.0.0.1 - - [05/Apr/2025 13:39:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:39:58,660 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-05 13:39:58,660 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-05 13:39:58,663 [INFO]  * Restarting with stat
+2025-04-05 13:40:00,285 [WARNING]  * Debugger is active!
+2025-04-05 13:40:00,292 [INFO]  * Debugger PIN: 110-811-118
+2025-04-05 13:40:00,422 [INFO] Page d'accueil demandée.
+2025-04-05 13:40:00,436 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:00] "GET / HTTP/1.1" 200 -
+2025-04-05 13:40:00,713 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:40:02,550 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:02] "GET /import_csv HTTP/1.1" 200 -
+2025-04-05 13:40:02,604 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:40:04,356 [INFO] Page d'accueil demandée.
+2025-04-05 13:40:04,359 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:04] "GET / HTTP/1.1" 200 -
+2025-04-05 13:40:04,413 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:40:14,133 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:14] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:40:14,139 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:14] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:40:18,704 [INFO] Page d'accueil demandée.
+2025-04-05 13:40:18,706 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:18] "GET / HTTP/1.1" 200 -
+2025-04-05 13:40:18,772 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:40:21,785 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:21] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:40:21,789 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:21] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:40:24,929 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:24] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:40:24,935 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:24] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:40:28,032 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:28] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:28,038 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:28] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:32,205 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:32] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:32,212 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:32] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:36,861 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:36] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:36,867 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:36] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:38,849 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:38] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:40:38,854 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:38] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:40:41,391 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:41] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:40:41,395 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:41] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-05 13:40:46,417 [INFO] Page d'accueil demandée.
+2025-04-05 13:40:46,418 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:46] "GET / HTTP/1.1" 200 -
+2025-04-05 13:40:46,464 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:40:48,030 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:48] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:48,036 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:48] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:50,195 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:50] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:50,201 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:50] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:40:52,862 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:52] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:40:52,866 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:52] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:40:55,111 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:55] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:40:55,115 [INFO] 127.0.0.1 - - [05/Apr/2025 13:40:55] "[31m[1mGET /import_csv HTTP/1.1[0m" 401 -
+2025-04-05 13:41:03,904 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-05 13:41:03,905 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-05 13:41:03,908 [INFO]  * Restarting with stat
+2025-04-05 13:41:05,299 [WARNING]  * Debugger is active!
+2025-04-05 13:41:05,306 [INFO]  * Debugger PIN: 110-811-118
+2025-04-05 13:41:06,886 [INFO] Page d'accueil demandée.
+2025-04-05 13:41:06,900 [INFO] 127.0.0.1 - - [05/Apr/2025 13:41:06] "GET / HTTP/1.1" 200 -
+2025-04-05 13:41:07,454 [INFO] 127.0.0.1 - - [05/Apr/2025 13:41:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:45:21,121 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:21] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-05 13:45:23,913 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:23] "GET /create HTTP/1.1" 200 -
+2025-04-05 13:45:23,989 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:45:25,520 [INFO] Page d'accueil demandée.
+2025-04-05 13:45:25,522 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:25] "GET / HTTP/1.1" 200 -
+2025-04-05 13:45:25,571 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:45:26,735 [INFO] BEGIN (implicit)
+2025-04-05 13:45:26,736 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-05 13:45:26,737 [INFO] [generated in 0.00247s] ()
+2025-04-05 13:45:26,739 [INFO] ROLLBACK
+2025-04-05 13:45:26,749 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:26] "GET /delete HTTP/1.1" 200 -
+2025-04-05 13:45:26,802 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:45:27,798 [INFO] Page d'accueil demandée.
+2025-04-05 13:45:27,799 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:27] "GET / HTTP/1.1" 200 -
+2025-04-05 13:45:27,889 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:45:29,156 [INFO] BEGIN (implicit)
+2025-04-05 13:45:29,157 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-05 13:45:29,159 [INFO] [cached since 2.424s ago] ()
+2025-04-05 13:45:29,160 [INFO] ROLLBACK
+2025-04-05 13:45:29,162 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-05 13:45:29,170 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:29] "GET /get_all HTTP/1.1" 200 -
+2025-04-05 13:45:29,240 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:45:30,137 [INFO] Page d'accueil demandée.
+2025-04-05 13:45:30,139 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:30] "GET / HTTP/1.1" 200 -
+2025-04-05 13:45:30,208 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:45:31,307 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:31] "GET /update HTTP/1.1" 200 -
+2025-04-05 13:45:31,364 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:45:32,509 [INFO] Page d'accueil demandée.
+2025-04-05 13:45:32,510 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:32] "GET / HTTP/1.1" 200 -
+2025-04-05 13:45:32,592 [INFO] 127.0.0.1 - - [05/Apr/2025 13:45:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 13:54:23,242 [INFO] 127.0.0.1 - - [05/Apr/2025 13:54:23] "[33mGET /apidoc/swagger HTTP/1.1[0m" 404 -
+2025-04-05 13:54:23,320 [INFO] 127.0.0.1 - - [05/Apr/2025 13:54:23] "[33mGET /apidoc/swagger HTTP/1.1[0m" 404 -
+2025-04-05 14:00:18,427 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-05 14:00:18,527 [INFO]  * Restarting with stat
+2025-04-05 14:00:20,012 [WARNING]  * Debugger is active!
+2025-04-05 14:00:20,019 [INFO]  * Debugger PIN: 491-183-414
+2025-04-05 14:01:25,503 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-05 14:01:25,504 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-05 14:01:25,506 [INFO]  * Restarting with stat
+2025-04-05 14:01:26,862 [WARNING]  * Debugger is active!
+2025-04-05 14:01:26,871 [INFO]  * Debugger PIN: 110-811-118
+2025-04-05 14:01:46,681 [INFO] 127.0.0.1 - - [05/Apr/2025 14:01:46] "[33mGET /apidoc/swagger HTTP/1.1[0m" 404 -
+2025-04-05 14:01:49,451 [INFO] Page d'accueil demandée.
+2025-04-05 14:01:49,465 [INFO] 127.0.0.1 - - [05/Apr/2025 14:01:49] "GET / HTTP/1.1" 200 -
+2025-04-05 14:01:49,933 [INFO] 127.0.0.1 - - [05/Apr/2025 14:01:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-05 14:01:52,522 [INFO] 127.0.0.1 - - [05/Apr/2025 14:01:52] "[33mGET /apidoc/swagger HTTP/1.1[0m" 404 -
+2025-04-05 14:01:54,255 [INFO] 127.0.0.1 - - [05/Apr/2025 14:01:54] "[33mGET /apidoc/swagger HTTP/1.1[0m" 404 -
+2025-04-05 14:02:17,549 [INFO] 127.0.0.1 - - [05/Apr/2025 14:02:17] "[31m[1mGET /api/products HTTP/1.1[0m" 401 -
+2025-04-05 14:02:17,613 [INFO] 127.0.0.1 - - [05/Apr/2025 14:02:17] "[31m[1mGET /api/products HTTP/1.1[0m" 401 -
+2025-04-05 14:02:47,033 [INFO] 127.0.0.1 - - [05/Apr/2025 14:02:47] "[33mGET /apidoc/swagger HTTP/1.1[0m" 404 -
+2025-04-05 14:03:51,473 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-05 14:03:51,474 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-05 14:03:51,476 [INFO]  * Restarting with stat
+2025-04-05 14:03:53,124 [WARNING]  * Debugger is active!
+2025-04-05 14:03:53,128 [INFO]  * Debugger PIN: 110-811-118
+2025-04-05 14:03:58,467 [INFO] 127.0.0.1 - - [05/Apr/2025 14:03:58] "[32mGET /apidoc/swagger HTTP/1.1[0m" 308 -
+2025-04-05 14:03:58,486 [INFO] 127.0.0.1 - - [05/Apr/2025 14:03:58] "GET /apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-05 14:03:59,426 [INFO] 127.0.0.1 - - [05/Apr/2025 14:03:59] "GET /apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-05 14:07:27,623 [INFO] 127.0.0.1 - - [05/Apr/2025 14:07:27] "[32mGET /api/apidoc/swagger HTTP/1.1[0m" 308 -
+2025-04-05 14:07:27,644 [INFO] 127.0.0.1 - - [05/Apr/2025 14:07:27] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-05 14:07:28,144 [INFO] 127.0.0.1 - - [05/Apr/2025 14:07:28] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
