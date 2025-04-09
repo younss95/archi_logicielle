@@ -2,7 +2,7 @@ from flask import Flask
 from spectree import SpecTree
 
 from archilog.views.web import web_ui
-from archilog.views.api import api_ui
+from archilog.views.api import api_ui, spec
 from archilog import config
 
 def create_app():
@@ -17,7 +17,6 @@ def create_app():
     app.register_blueprint(api_ui)
 
     # Ajout de Spectree
-    spec = SpecTree("flask")
     spec.register(app)
 
 

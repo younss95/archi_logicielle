@@ -5,7 +5,7 @@ from wtforms.fields.choices import SelectField
 import archilog.models as models
 from archilog.services import import_from_csv, export_to_csv
 from flask_wtf import FlaskForm
-from wtforms import StringField, DecimalField, SubmitField
+from wtforms import StringField, DecimalField, SubmitField, FloatField, IntegerField
 from wtforms.validators import DataRequired, Optional
 from flask import Flask
 from flask_httpauth import HTTPBasicAuth
@@ -56,7 +56,7 @@ def create_product():
     form = CreateProductForm()
 
     if form.validate_on_submit():
-        name = form.name.datagit
+        name = form.name.data
         amount = form.amount.data
         category = form.category.data or None
 
@@ -73,7 +73,9 @@ def create_product():
 def delete_product():
     form = DeleteProductForm()
     products = models.get_all_entries()
-    form.product_id.choices = [(p[0], p[1]) for p in products]
+    form.product_id.choices = [(p.id, p.name) for p in products]
+
+
 
     if form.validate_on_submit():
         product_id = form.product_id.data
@@ -176,7 +178,7 @@ def handle_internal_error(error):
 
 class CreateProductForm(FlaskForm):
     name = StringField("Nom du produit", validators=[DataRequired()], id="name-id")
-    amount = DecimalField("Montant", places=2, validators=[DataRequired()], id="amount-id")
+    amount = FloatField("Montant", places=2, validators=[DataRequired()], id="amount-id")
     category = StringField("Catégorie", validators=[Optional()], id="category-id")
     submit = SubmitField("Soumettre")  # Ajout du bouton de soumission
 
@@ -189,7 +191,7 @@ class DeleteProductForm(FlaskForm):
 
 
 class UpdateProductForm(FlaskForm):
-    product_id = StringField("ID du produit", validators=[DataRequired(), Optional()])
+    product_id = IntegerField("ID du produit", validators=[DataRequired(), Optional()])
     name = StringField("Nom du produit", validators=[DataRequired()])
     amount = DecimalField("Montant", places=2, validators=[DataRequired()])
     category = StringField("Catégorie", validators=[Optional()])

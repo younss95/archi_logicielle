@@ -50,7 +50,7 @@ def get_entry(_id: int):
     with engine.connect() as conn:
         result = conn.execute(stmt).fetchone()
         if result:
-            return result  # Retourne la ligne sous forme de tuple
+            return Entry.from_db(*result) # Retourne la ligne sous forme de tuple
         else:
             raise Exception("Entry not found")
 
@@ -59,7 +59,7 @@ def get_all_entries():
     stmt = select(entries_table.c.id, entries_table.c.name, entries_table.c.amount, entries_table.c.category)
     with engine.connect() as conn:
         results = conn.execute(stmt).fetchall()
-        return results  # Liste de tuples
+        return [Entry.from_db(*row) for row in results]  # Liste de tuples
 
 # Fonction pour mettre à jour une entrée
 def update_entry(_id: int, name: str, amount: float, category: str | None):
