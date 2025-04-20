@@ -2530,3 +2530,819 @@ FROM entries
 2025-04-09 15:24:29,099 [INFO]  * Restarting with stat
 2025-04-09 15:24:29,681 [WARNING]  * Debugger is active!
 2025-04-09 15:24:29,681 [INFO]  * Debugger PIN: 234-409-314
+2025-04-17 12:21:56,878 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-17 12:21:56,879 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-17 12:21:56,886 [INFO]  * Restarting with stat
+2025-04-17 12:21:58,666 [WARNING]  * Debugger is active!
+2025-04-17 12:21:58,671 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 12:21:58,776 [INFO] Page d'accueil demandée.
+2025-04-17 12:21:58,852 [INFO] 127.0.0.1 - - [17/Apr/2025 12:21:58] "GET / HTTP/1.1" 200 -
+2025-04-17 12:21:58,987 [INFO] 127.0.0.1 - - [17/Apr/2025 12:21:58] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-17 12:22:00,643 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 12:22:02,018 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:02] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-17 12:22:06,104 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:06] "[35m[1mGET /create HTTP/1.1[0m" 500 -
+2025-04-17 12:22:06,222 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:06] "GET /create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-17 12:22:06,247 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:06] "GET /create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-17 12:22:06,355 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:06] "GET /create?__debugger__=yes&cmd=resource&f=console.png&s=a1W52ltQeb3FWbKXWnbn HTTP/1.1" 200 -
+2025-04-17 12:22:07,167 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:07] "GET /create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-17 12:22:25,095 [INFO] BEGIN (implicit)
+2025-04-17 12:22:25,097 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:22:25,099 [INFO] [generated in 0.00404s] ()
+2025-04-17 12:22:25,102 [INFO] ROLLBACK
+2025-04-17 12:22:25,145 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:25] "GET /delete HTTP/1.1" 200 -
+2025-04-17 12:22:25,211 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:28,008 [INFO] Page d'accueil demandée.
+2025-04-17 12:22:28,010 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:28] "GET / HTTP/1.1" 200 -
+2025-04-17 12:22:28,058 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:29,072 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:29] "GET /get HTTP/1.1" 200 -
+2025-04-17 12:22:29,105 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:30,786 [INFO] Page d'accueil demandée.
+2025-04-17 12:22:30,792 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:30] "GET / HTTP/1.1" 200 -
+2025-04-17 12:22:30,843 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:31,930 [INFO] BEGIN (implicit)
+2025-04-17 12:22:31,931 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:22:31,932 [INFO] [cached since 6.837s ago] ()
+2025-04-17 12:22:31,934 [INFO] ROLLBACK
+2025-04-17 12:22:31,936 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-17 12:22:31,962 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:31] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:22:32,007 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:32,929 [INFO] Page d'accueil demandée.
+2025-04-17 12:22:32,932 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:32] "GET / HTTP/1.1" 200 -
+2025-04-17 12:22:33,075 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:33,754 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:33] "GET /get HTTP/1.1" 200 -
+2025-04-17 12:22:33,834 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:36,644 [INFO] BEGIN (implicit)
+2025-04-17 12:22:36,646 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-17 12:22:36,648 [INFO] [generated in 0.00387s] ('62',)
+2025-04-17 12:22:36,650 [INFO] ROLLBACK
+2025-04-17 12:22:36,651 [INFO] Produit avec ID 62 recherché.
+2025-04-17 12:22:36,654 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:36] "POST /get HTTP/1.1" 200 -
+2025-04-17 12:22:36,722 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:37,746 [INFO] Page d'accueil demandée.
+2025-04-17 12:22:37,749 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:37] "GET / HTTP/1.1" 200 -
+2025-04-17 12:22:37,786 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:39,066 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:39] "GET /update HTTP/1.1" 200 -
+2025-04-17 12:22:39,109 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:47,106 [INFO] BEGIN (implicit)
+2025-04-17 12:22:47,107 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-17 12:22:47,109 [INFO] [generated in 0.00308s] (62,)
+2025-04-17 12:22:47,110 [INFO] ROLLBACK
+2025-04-17 12:22:47,114 [INFO] BEGIN (implicit)
+2025-04-17 12:22:47,116 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-17 12:22:47,116 [INFO] [generated in 0.00226s] ('test', 100.0, 'tests', 62)
+2025-04-17 12:22:47,121 [INFO] COMMIT
+2025-04-17 12:22:47,128 [INFO] Produit 62 mis à jour par admin.
+2025-04-17 12:22:47,131 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:47] "[32mPOST /update HTTP/1.1[0m" 302 -
+2025-04-17 12:22:47,138 [INFO] Page d'accueil demandée.
+2025-04-17 12:22:47,141 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:47] "GET / HTTP/1.1" 200 -
+2025-04-17 12:22:47,207 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:48,801 [INFO] BEGIN (implicit)
+2025-04-17 12:22:48,802 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:22:48,803 [INFO] [cached since 23.71s ago] ()
+2025-04-17 12:22:48,804 [INFO] ROLLBACK
+2025-04-17 12:22:48,805 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-17 12:22:48,809 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:48] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:22:48,861 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:49,882 [INFO] Page d'accueil demandée.
+2025-04-17 12:22:49,884 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:49] "GET / HTTP/1.1" 200 -
+2025-04-17 12:22:49,942 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:52,093 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:52] "GET /import_csv HTTP/1.1" 200 -
+2025-04-17 12:22:52,153 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:53,295 [INFO] Page d'accueil demandée.
+2025-04-17 12:22:53,298 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:53] "GET / HTTP/1.1" 200 -
+2025-04-17 12:22:53,385 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:54,170 [INFO] BEGIN (implicit)
+2025-04-17 12:22:54,172 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:22:54,174 [INFO] [cached since 29.08s ago] ()
+2025-04-17 12:22:54,178 [INFO] ROLLBACK
+2025-04-17 12:22:54,180 [INFO] Export des données en CSV demandé.
+2025-04-17 12:22:54,182 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:54] "GET /export_csv HTTP/1.1" 200 -
+2025-04-17 12:22:57,398 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:57] "[35m[1mGET /create HTTP/1.1[0m" 500 -
+2025-04-17 12:22:57,438 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:57] "[36mGET /create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:22:57,470 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:57] "[36mGET /create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-17 12:22:57,521 [INFO] 127.0.0.1 - - [17/Apr/2025 12:22:57] "[36mGET /create?__debugger__=yes&cmd=resource&f=console.png&s=a1W52ltQeb3FWbKXWnbn HTTP/1.1[0m" 304 -
+2025-04-17 12:31:16,467 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-17 12:31:16,631 [INFO]  * Restarting with stat
+2025-04-17 12:31:20,152 [WARNING]  * Debugger is active!
+2025-04-17 12:31:20,159 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 12:31:20,463 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:20] "GET /create HTTP/1.1" 200 -
+2025-04-17 12:31:20,581 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:31:32,242 [INFO] BEGIN (implicit)
+2025-04-17 12:31:32,243 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-17 12:31:32,244 [INFO] [generated in 0.00259s] ('arsenal', 90.0, 'foot')
+2025-04-17 12:31:32,250 [INFO] COMMIT
+2025-04-17 12:31:32,258 [INFO] Produit 'arsenal' créé par admin.
+2025-04-17 12:31:32,260 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:32] "[32mPOST /create HTTP/1.1[0m" 302 -
+2025-04-17 12:31:32,268 [INFO] Page d'accueil demandée.
+2025-04-17 12:31:32,302 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:32] "GET / HTTP/1.1" 200 -
+2025-04-17 12:31:32,387 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:31:33,820 [INFO] BEGIN (implicit)
+2025-04-17 12:31:33,821 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:31:33,822 [INFO] [generated in 0.00228s] ()
+2025-04-17 12:31:33,823 [INFO] ROLLBACK
+2025-04-17 12:31:33,824 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-04-17 12:31:33,854 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:33] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:31:33,917 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:31:35,017 [INFO] Page d'accueil demandée.
+2025-04-17 12:31:35,019 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:35] "GET / HTTP/1.1" 200 -
+2025-04-17 12:31:35,115 [INFO] 127.0.0.1 - - [17/Apr/2025 12:31:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:32:44,910 [INFO] 127.0.0.1 - - [17/Apr/2025 12:32:44] "[32mGET /api/apidoc/swagger HTTP/1.1[0m" 308 -
+2025-04-17 12:32:44,924 [INFO] 127.0.0.1 - - [17/Apr/2025 12:32:44] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-17 12:32:45,794 [INFO] 127.0.0.1 - - [17/Apr/2025 12:32:45] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-17 12:33:14,700 [INFO] BEGIN (implicit)
+2025-04-17 12:33:14,702 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:33:14,707 [INFO] [cached since 100.9s ago] ()
+2025-04-17 12:33:14,710 [INFO] ROLLBACK
+2025-04-17 12:33:14,712 [INFO] 127.0.0.1 - - [17/Apr/2025 12:33:14] "GET /api/products HTTP/1.1" 200 -
+2025-04-17 12:33:31,911 [INFO] BEGIN (implicit)
+2025-04-17 12:33:31,912 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:33:31,914 [INFO] [cached since 118.1s ago] ()
+2025-04-17 12:33:31,916 [INFO] ROLLBACK
+2025-04-17 12:33:31,918 [INFO] 127.0.0.1 - - [17/Apr/2025 12:33:31] "GET /api/products/export HTTP/1.1" 200 -
+2025-04-17 12:33:57,010 [INFO] BEGIN (implicit)
+2025-04-17 12:33:57,015 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:33:57,017 [INFO] [cached since 143.2s ago] ()
+2025-04-17 12:33:57,019 [INFO] ROLLBACK
+2025-04-17 12:33:57,020 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-04-17 12:33:57,022 [INFO] 127.0.0.1 - - [17/Apr/2025 12:33:57] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:33:57,081 [INFO] 127.0.0.1 - - [17/Apr/2025 12:33:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:34:02,207 [INFO] BEGIN (implicit)
+2025-04-17 12:34:02,208 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-17 12:34:02,210 [INFO] [generated in 0.00347s] (66,)
+2025-04-17 12:34:02,214 [INFO] ROLLBACK
+2025-04-17 12:34:02,216 [INFO] 127.0.0.1 - - [17/Apr/2025 12:34:02] "GET /api/products/66 HTTP/1.1" 200 -
+2025-04-17 12:34:18,619 [INFO] BEGIN (implicit)
+2025-04-17 12:34:18,621 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-17 12:34:18,624 [INFO] [cached since 16.42s ago] (66,)
+2025-04-17 12:34:18,627 [INFO] ROLLBACK
+2025-04-17 12:34:18,633 [INFO] BEGIN (implicit)
+2025-04-17 12:34:18,634 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-17 12:34:18,636 [INFO] [generated in 0.00317s] (66,)
+2025-04-17 12:34:18,643 [INFO] COMMIT
+2025-04-17 12:34:18,654 [INFO] 127.0.0.1 - - [17/Apr/2025 12:34:18] "DELETE /api/products/66 HTTP/1.1" 200 -
+2025-04-17 12:34:26,980 [INFO] BEGIN (implicit)
+2025-04-17 12:34:26,981 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:34:26,983 [INFO] [cached since 173.2s ago] ()
+2025-04-17 12:34:26,985 [INFO] ROLLBACK
+2025-04-17 12:34:26,986 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-17 12:34:26,988 [INFO] 127.0.0.1 - - [17/Apr/2025 12:34:26] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:34:27,032 [INFO] 127.0.0.1 - - [17/Apr/2025 12:34:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:35:10,287 [ERROR] 422 Request Validation Error: Product - [{'type': 'missing', 'loc': ('name',), 'msg': 'Field required', 'input': {}, 'url': 'https://errors.pydantic.dev/2.11/v/missing'}, {'type': 'missing', 'loc': ('amount',), 'msg': 'Field required', 'input': {}, 'url': 'https://errors.pydantic.dev/2.11/v/missing'}]
+2025-04-17 12:35:10,289 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:10] "[31m[1mPUT /api/products/62 HTTP/1.1[0m" 422 -
+2025-04-17 12:35:22,646 [INFO] BEGIN (implicit)
+2025-04-17 12:35:22,648 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-17 12:35:22,649 [INFO] [cached since 80.44s ago] (62,)
+2025-04-17 12:35:22,650 [INFO] ROLLBACK
+2025-04-17 12:35:22,653 [INFO] BEGIN (implicit)
+2025-04-17 12:35:22,654 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-17 12:35:22,656 [INFO] [generated in 0.00254s] ('cr7', 100.0, 'foot', 62)
+2025-04-17 12:35:22,662 [INFO] COMMIT
+2025-04-17 12:35:22,669 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:22] "PUT /api/products/62 HTTP/1.1" 200 -
+2025-04-17 12:35:28,014 [INFO] BEGIN (implicit)
+2025-04-17 12:35:28,016 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:35:28,017 [INFO] [cached since 234.2s ago] ()
+2025-04-17 12:35:28,019 [INFO] ROLLBACK
+2025-04-17 12:35:28,021 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-17 12:35:28,023 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:28] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:35:28,056 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:35:29,308 [INFO] BEGIN (implicit)
+2025-04-17 12:35:29,310 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:35:29,311 [INFO] [cached since 235.5s ago] ()
+2025-04-17 12:35:29,313 [INFO] ROLLBACK
+2025-04-17 12:35:29,314 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-17 12:35:29,317 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:29] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:35:29,339 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:35:29,489 [INFO] BEGIN (implicit)
+2025-04-17 12:35:29,491 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:35:29,492 [INFO] [cached since 235.7s ago] ()
+2025-04-17 12:35:29,495 [INFO] ROLLBACK
+2025-04-17 12:35:29,497 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-17 12:35:29,498 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:29] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:35:29,520 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:35:29,670 [INFO] BEGIN (implicit)
+2025-04-17 12:35:29,671 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:35:29,673 [INFO] [cached since 235.9s ago] ()
+2025-04-17 12:35:29,675 [INFO] ROLLBACK
+2025-04-17 12:35:29,676 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-17 12:35:29,678 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:29] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:35:29,702 [INFO] 127.0.0.1 - - [17/Apr/2025 12:35:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:36:11,244 [INFO] BEGIN (implicit)
+2025-04-17 12:36:11,246 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-17 12:36:11,248 [INFO] [cached since 279s ago] ('victor hugo', 50.0, 'livre')
+2025-04-17 12:36:11,254 [INFO] COMMIT
+2025-04-17 12:36:11,264 [INFO] 127.0.0.1 - - [17/Apr/2025 12:36:11] "[35m[1mPOST /api/products HTTP/1.1[0m" 201 -
+2025-04-17 12:36:16,187 [INFO] BEGIN (implicit)
+2025-04-17 12:36:16,189 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:36:16,191 [INFO] [cached since 282.4s ago] ()
+2025-04-17 12:36:16,195 [INFO] ROLLBACK
+2025-04-17 12:36:16,196 [INFO] Demande de tous les produits. Nombre de produits: 2.
+2025-04-17 12:36:16,200 [INFO] 127.0.0.1 - - [17/Apr/2025 12:36:16] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:36:16,236 [INFO] 127.0.0.1 - - [17/Apr/2025 12:36:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:45:35,764 [INFO] BEGIN (implicit)
+2025-04-17 12:45:35,766 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-17 12:45:35,767 [INFO] [cached since 677.1s ago] (67,)
+2025-04-17 12:45:35,774 [INFO] COMMIT
+2025-04-17 12:45:35,782 [INFO] 127.0.0.1 - - [17/Apr/2025 12:45:35] "POST /api/products/delete HTTP/1.1" 200 -
+2025-04-17 12:45:39,991 [INFO] BEGIN (implicit)
+2025-04-17 12:45:39,993 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-17 12:45:39,997 [INFO] [cached since 846.2s ago] ()
+2025-04-17 12:45:39,998 [INFO] ROLLBACK
+2025-04-17 12:45:40,000 [INFO] Demande de tous les produits. Nombre de produits: 1.
+2025-04-17 12:45:40,004 [INFO] 127.0.0.1 - - [17/Apr/2025 12:45:40] "GET /get_all HTTP/1.1" 200 -
+2025-04-17 12:45:40,038 [INFO] 127.0.0.1 - - [17/Apr/2025 12:45:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-17 12:45:57,955 [INFO] 127.0.0.1 - - [17/Apr/2025 12:45:57] "[31m[1mPOST /api/products/import HTTP/1.1[0m" 400 -
+2025-04-17 12:50:55,961 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 12:50:56,070 [INFO]  * Restarting with stat
+2025-04-17 12:50:57,685 [WARNING]  * Debugger is active!
+2025-04-17 12:50:57,690 [INFO]  * Debugger PIN: 491-183-414
+2025-04-17 12:52:10,134 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 12:52:10,288 [INFO]  * Restarting with stat
+2025-04-17 12:52:12,054 [WARNING]  * Debugger is active!
+2025-04-17 12:52:12,058 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 12:52:15,046 [INFO] 127.0.0.1 - - [17/Apr/2025 12:52:15] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-17 12:52:15,666 [INFO] 127.0.0.1 - - [17/Apr/2025 12:52:15] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-17 12:52:41,864 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 12:52:41,997 [INFO]  * Restarting with stat
+2025-04-17 12:52:43,611 [WARNING]  * Debugger is active!
+2025-04-17 12:52:43,615 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 12:52:43,668 [INFO] 127.0.0.1 - - [17/Apr/2025 12:52:43] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-17 12:52:43,874 [INFO] 127.0.0.1 - - [17/Apr/2025 12:52:43] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-17 12:52:49,981 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 12:52:50,148 [INFO]  * Restarting with stat
+2025-04-17 12:52:52,031 [WARNING]  * Debugger is active!
+2025-04-17 12:52:52,035 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 12:56:09,865 [INFO] 127.0.0.1 - - [17/Apr/2025 12:56:09] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-17 12:56:10,326 [INFO] 127.0.0.1 - - [17/Apr/2025 12:56:10] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-17 12:59:17,283 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 12:59:17,402 [INFO]  * Restarting with stat
+2025-04-17 12:59:19,158 [WARNING]  * Debugger is active!
+2025-04-17 12:59:19,163 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 12:59:19,219 [INFO] 127.0.0.1 - - [17/Apr/2025 12:59:19] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-17 12:59:19,410 [INFO] 127.0.0.1 - - [17/Apr/2025 12:59:19] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-17 12:59:32,855 [INFO] 127.0.0.1 - - [17/Apr/2025 12:59:32] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-17 12:59:33,006 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 12:59:33,197 [INFO]  * Restarting with stat
+2025-04-17 12:59:35,251 [WARNING]  * Debugger is active!
+2025-04-17 12:59:35,255 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 12:59:35,332 [INFO] 127.0.0.1 - - [17/Apr/2025 12:59:35] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-17 12:59:44,647 [INFO] 127.0.0.1 - - [17/Apr/2025 12:59:44] "[31m[1mPOST /api/products/import HTTP/1.1[0m" 401 -
+2025-04-17 12:59:54,982 [INFO] 127.0.0.1 - - [17/Apr/2025 12:59:54] "[31m[1mPOST /api/products/import HTTP/1.1[0m" 400 -
+2025-04-17 13:00:14,437 [INFO] 127.0.0.1 - - [17/Apr/2025 13:00:14] "[31m[1mPOST /api/products/import HTTP/1.1[0m" 400 -
+2025-04-17 13:00:51,060 [INFO] 127.0.0.1 - - [17/Apr/2025 13:00:51] "[31m[1mGET /api/products/import HTTP/1.1[0m" 405 -
+2025-04-17 13:00:51,509 [INFO] 127.0.0.1 - - [17/Apr/2025 13:00:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 13:01:13,708 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 13:01:13,831 [INFO]  * Restarting with stat
+2025-04-17 13:01:15,490 [WARNING]  * Debugger is active!
+2025-04-17 13:01:15,494 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 13:01:52,863 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 13:01:52,983 [INFO]  * Restarting with stat
+2025-04-17 13:01:54,672 [WARNING]  * Debugger is active!
+2025-04-17 13:01:54,679 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 13:01:55,023 [INFO] 127.0.0.1 - - [17/Apr/2025 13:01:55] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-17 13:01:55,506 [INFO] 127.0.0.1 - - [17/Apr/2025 13:01:55] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-17 13:02:05,508 [INFO] 127.0.0.1 - - [17/Apr/2025 13:02:05] "[31m[1mPOST /api/products/import HTTP/1.1[0m" 400 -
+2025-04-17 13:02:14,960 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 13:02:15,060 [INFO]  * Restarting with stat
+2025-04-17 13:02:16,729 [WARNING]  * Debugger is active!
+2025-04-17 13:02:16,735 [INFO]  * Debugger PIN: 110-811-118
+2025-04-17 13:02:18,751 [INFO] 127.0.0.1 - - [17/Apr/2025 13:02:18] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-17 13:02:19,078 [INFO] 127.0.0.1 - - [17/Apr/2025 13:02:19] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-17 13:02:38,507 [INFO] 127.0.0.1 - - [17/Apr/2025 13:02:38] "[31m[1mPOST /api/products/import HTTP/1.1[0m" 400 -
+2025-04-17 13:10:58,359 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 13:10:58,501 [INFO]  * Restarting with stat
+2025-04-17 13:11:00,210 [WARNING]  * Debugger is active!
+2025-04-17 13:11:00,214 [INFO]  * Debugger PIN: 491-183-414
+2025-04-17 13:17:58,415 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-17 13:17:58,567 [INFO]  * Restarting with stat
+2025-04-17 13:18:00,252 [WARNING]  * Debugger is active!
+2025-04-17 13:18:00,257 [INFO]  * Debugger PIN: 491-183-414
+2025-04-17 13:18:49,840 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 17:25:33,394 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-20 17:25:33,395 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-20 17:25:33,398 [INFO]  * Restarting with stat
+2025-04-20 17:25:35,501 [WARNING]  * Debugger is active!
+2025-04-20 17:25:35,508 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:25:35,629 [INFO] Page d'accueil demandée.
+2025-04-20 17:25:35,699 [INFO] 127.0.0.1 - - [20/Apr/2025 17:25:35] "GET / HTTP/1.1" 200 -
+2025-04-20 17:25:35,850 [INFO] 127.0.0.1 - - [20/Apr/2025 17:25:35] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-20 17:25:36,217 [INFO] 127.0.0.1 - - [20/Apr/2025 17:25:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-20 17:26:08,788 [INFO] Page d'accueil demandée.
+2025-04-20 17:26:08,790 [INFO] 127.0.0.1 - - [20/Apr/2025 17:26:08] "GET / HTTP/1.1" 200 -
+2025-04-20 17:26:08,834 [INFO] 127.0.0.1 - - [20/Apr/2025 17:26:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:26:29,296 [INFO] 127.0.0.1 - - [20/Apr/2025 17:26:29] "[32mGET /api/apidoc/swagger HTTP/1.1[0m" 308 -
+2025-04-20 17:26:29,314 [INFO] 127.0.0.1 - - [20/Apr/2025 17:26:29] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-20 17:26:29,887 [INFO] 127.0.0.1 - - [20/Apr/2025 17:26:29] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-20 17:27:22,300 [INFO] BEGIN (implicit)
+2025-04-20 17:27:22,302 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 17:27:22,303 [INFO] [generated in 0.00403s] ()
+2025-04-20 17:27:22,310 [INFO] ROLLBACK
+2025-04-20 17:27:22,313 [INFO] 127.0.0.1 - - [20/Apr/2025 17:27:22] "GET /api/products/export HTTP/1.1" 200 -
+2025-04-20 17:28:30,747 [INFO] 127.0.0.1 - - [20/Apr/2025 17:28:30] "[35m[1mPOST /api/import/files HTTP/1.1[0m" 500 -
+2025-04-20 17:29:51,433 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 17:29:51,599 [INFO]  * Restarting with stat
+2025-04-20 17:29:53,761 [WARNING]  * Debugger is active!
+2025-04-20 17:29:53,767 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:29:58,002 [INFO] 127.0.0.1 - - [20/Apr/2025 17:29:58] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-20 17:29:58,561 [INFO] 127.0.0.1 - - [20/Apr/2025 17:29:58] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-20 17:30:12,663 [INFO] 127.0.0.1 - - [20/Apr/2025 17:30:12] "[35m[1mPOST /api/import/files HTTP/1.1[0m" 500 -
+2025-04-20 17:31:48,881 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 17:31:49,113 [INFO]  * Restarting with stat
+2025-04-20 17:31:51,113 [WARNING]  * Debugger is active!
+2025-04-20 17:31:51,117 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:31:52,337 [INFO] 127.0.0.1 - - [20/Apr/2025 17:31:52] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-20 17:31:52,576 [INFO] 127.0.0.1 - - [20/Apr/2025 17:31:52] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-20 17:32:05,882 [INFO] 127.0.0.1 - - [20/Apr/2025 17:32:05] "[35m[1mPOST /api/import/files HTTP/1.1[0m" 500 -
+2025-04-20 17:34:07,795 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 17:34:07,985 [INFO]  * Restarting with stat
+2025-04-20 17:34:09,765 [WARNING]  * Debugger is active!
+2025-04-20 17:34:09,771 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:34:09,828 [INFO] 127.0.0.1 - - [20/Apr/2025 17:34:09] "GET /api/apidoc/swagger/ HTTP/1.1" 200 -
+2025-04-20 17:34:10,041 [INFO] 127.0.0.1 - - [20/Apr/2025 17:34:10] "GET /api/apidoc/openapi.json HTTP/1.1" 200 -
+2025-04-20 17:34:21,387 [INFO] BEGIN (implicit)
+2025-04-20 17:34:21,387 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 17:34:21,389 [INFO] [generated in 0.00240s] ('John', 15.5, 'technology')
+2025-04-20 17:34:21,395 [INFO] COMMIT
+2025-04-20 17:34:21,407 [INFO] BEGIN (implicit)
+2025-04-20 17:34:21,408 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 17:34:21,408 [INFO] [cached since 0.02166s ago] ('Eva', 40.75, 'education')
+2025-04-20 17:34:21,411 [INFO] COMMIT
+2025-04-20 17:34:21,417 [INFO] BEGIN (implicit)
+2025-04-20 17:34:21,418 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 17:34:21,419 [INFO] [cached since 0.03206s ago] ('Paul', 22.1, 'health')
+2025-04-20 17:34:21,420 [INFO] COMMIT
+2025-04-20 17:34:21,426 [INFO] BEGIN (implicit)
+2025-04-20 17:34:21,426 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 17:34:21,428 [INFO] [cached since 0.04067s ago] ('Nina', 55.3, 'finance')
+2025-04-20 17:34:21,430 [INFO] COMMIT
+2025-04-20 17:34:21,435 [INFO] BEGIN (implicit)
+2025-04-20 17:34:21,435 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 17:34:21,436 [INFO] [cached since 0.04946s ago] ('Liam', 30.0, 'design')
+2025-04-20 17:34:21,439 [INFO] COMMIT
+2025-04-20 17:34:21,443 [INFO] 127.0.0.1 - - [20/Apr/2025 17:34:21] "POST /api/import/files HTTP/1.1" 200 -
+2025-04-20 17:34:32,158 [INFO] Page d'accueil demandée.
+2025-04-20 17:34:32,184 [INFO] 127.0.0.1 - - [20/Apr/2025 17:34:32] "GET / HTTP/1.1" 200 -
+2025-04-20 17:34:32,335 [INFO] 127.0.0.1 - - [20/Apr/2025 17:34:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:34:33,695 [INFO] BEGIN (implicit)
+2025-04-20 17:34:33,696 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 17:34:33,696 [INFO] [generated in 0.00174s] ()
+2025-04-20 17:34:33,697 [INFO] ROLLBACK
+2025-04-20 17:34:33,698 [INFO] Demande de tous les produits. Nombre de produits: 6.
+2025-04-20 17:34:33,746 [INFO] 127.0.0.1 - - [20/Apr/2025 17:34:33] "GET /get_all HTTP/1.1" 200 -
+2025-04-20 17:34:33,809 [INFO] 127.0.0.1 - - [20/Apr/2025 17:34:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:37:33,061 [INFO] Page d'accueil demandée.
+2025-04-20 17:37:33,065 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:33] "GET / HTTP/1.1" 200 -
+2025-04-20 17:37:33,124 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:37:37,245 [INFO] BEGIN (implicit)
+2025-04-20 17:37:37,247 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 17:37:37,248 [INFO] [cached since 183.6s ago] ()
+2025-04-20 17:37:37,250 [INFO] ROLLBACK
+2025-04-20 17:37:37,251 [INFO] Demande de tous les produits. Nombre de produits: 6.
+2025-04-20 17:37:37,253 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:37] "GET /get_all HTTP/1.1" 200 -
+2025-04-20 17:37:37,308 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:37:38,653 [INFO] Page d'accueil demandée.
+2025-04-20 17:37:38,655 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:38] "GET / HTTP/1.1" 200 -
+2025-04-20 17:37:38,700 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:37:40,813 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:40] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-20 17:37:45,064 [INFO] BEGIN (implicit)
+2025-04-20 17:37:45,067 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 17:37:45,068 [INFO] [cached since 191.4s ago] ()
+2025-04-20 17:37:45,071 [INFO] ROLLBACK
+2025-04-20 17:37:45,072 [INFO] Demande de tous les produits. Nombre de produits: 6.
+2025-04-20 17:37:45,075 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:45] "GET /get_all HTTP/1.1" 200 -
+2025-04-20 17:37:45,125 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:37:48,527 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:48] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-20 17:37:51,964 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:51] "[31m[1mGET /create HTTP/1.1[0m" 401 -
+2025-04-20 17:37:54,543 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:54] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-20 17:37:56,805 [INFO] 127.0.0.1 - - [20/Apr/2025 17:37:56] "[31m[1mGET /delete HTTP/1.1[0m" 401 -
+2025-04-20 17:38:02,753 [INFO] BEGIN (implicit)
+2025-04-20 17:38:02,754 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 17:38:02,755 [INFO] [cached since 209.1s ago] ()
+2025-04-20 17:38:02,757 [INFO] ROLLBACK
+2025-04-20 17:38:02,810 [INFO] 127.0.0.1 - - [20/Apr/2025 17:38:02] "GET /delete HTTP/1.1" 200 -
+2025-04-20 17:38:02,872 [INFO] 127.0.0.1 - - [20/Apr/2025 17:38:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:38:04,527 [INFO] Page d'accueil demandée.
+2025-04-20 17:38:04,531 [INFO] 127.0.0.1 - - [20/Apr/2025 17:38:04] "GET / HTTP/1.1" 200 -
+2025-04-20 17:38:04,587 [INFO] 127.0.0.1 - - [20/Apr/2025 17:38:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:38:05,924 [INFO] 127.0.0.1 - - [20/Apr/2025 17:38:05] "GET /create HTTP/1.1" 200 -
+2025-04-20 17:38:05,991 [INFO] 127.0.0.1 - - [20/Apr/2025 17:38:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:38:07,392 [INFO] Page d'accueil demandée.
+2025-04-20 17:38:07,395 [INFO] 127.0.0.1 - - [20/Apr/2025 17:38:07] "GET / HTTP/1.1" 200 -
+2025-04-20 17:38:07,443 [INFO] 127.0.0.1 - - [20/Apr/2025 17:38:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 17:48:50,656 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\cli.py', reloading
+2025-04-20 17:48:50,926 [INFO]  * Restarting with stat
+2025-04-20 17:48:52,830 [WARNING]  * Debugger is active!
+2025-04-20 17:48:52,835 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:52:19,578 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 17:52:19,713 [INFO]  * Restarting with stat
+2025-04-20 17:52:21,519 [WARNING]  * Debugger is active!
+2025-04-20 17:52:21,522 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:53:44,354 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 17:53:44,480 [INFO]  * Restarting with stat
+2025-04-20 17:53:46,307 [WARNING]  * Debugger is active!
+2025-04-20 17:53:46,311 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:54:21,046 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 17:54:21,370 [INFO]  * Restarting with stat
+2025-04-20 17:54:23,243 [WARNING]  * Debugger is active!
+2025-04-20 17:54:23,248 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:54:45,945 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 17:54:46,071 [INFO]  * Restarting with stat
+2025-04-20 17:54:47,733 [WARNING]  * Debugger is active!
+2025-04-20 17:54:47,737 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:55:03,564 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 17:55:03,682 [INFO]  * Restarting with stat
+2025-04-20 17:55:05,290 [WARNING]  * Debugger is active!
+2025-04-20 17:55:05,293 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:55:33,954 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 17:55:34,106 [INFO]  * Restarting with stat
+2025-04-20 17:55:35,751 [WARNING]  * Debugger is active!
+2025-04-20 17:55:35,758 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:56:25,938 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 17:56:26,061 [INFO]  * Restarting with stat
+2025-04-20 17:56:27,733 [WARNING]  * Debugger is active!
+2025-04-20 17:56:27,737 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 17:56:46,727 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 17:56:46,866 [INFO]  * Restarting with stat
+2025-04-20 17:56:48,623 [WARNING]  * Debugger is active!
+2025-04-20 17:56:48,627 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:02:31,695 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 18:02:31,811 [INFO]  * Restarting with stat
+2025-04-20 18:02:33,679 [WARNING]  * Debugger is active!
+2025-04-20 18:02:33,685 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:04:28,449 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\services.py', reloading
+2025-04-20 18:04:28,594 [INFO]  * Restarting with stat
+2025-04-20 18:04:30,413 [WARNING]  * Debugger is active!
+2025-04-20 18:04:30,417 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:04:36,827 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\services.py', reloading
+2025-04-20 18:04:36,967 [INFO]  * Restarting with stat
+2025-04-20 18:04:38,986 [WARNING]  * Debugger is active!
+2025-04-20 18:04:38,990 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:04:57,954 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\services.py', reloading
+2025-04-20 18:04:58,073 [INFO]  * Restarting with stat
+2025-04-20 18:04:59,898 [WARNING]  * Debugger is active!
+2025-04-20 18:04:59,903 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:05:08,408 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\services.py', reloading
+2025-04-20 18:05:08,525 [INFO]  * Restarting with stat
+2025-04-20 18:05:10,436 [WARNING]  * Debugger is active!
+2025-04-20 18:05:10,441 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:06:07,368 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\models.py', reloading
+2025-04-20 18:06:07,481 [INFO]  * Restarting with stat
+2025-04-20 18:06:09,168 [WARNING]  * Debugger is active!
+2025-04-20 18:06:09,172 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:06:19,755 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\models.py', reloading
+2025-04-20 18:06:19,885 [INFO]  * Restarting with stat
+2025-04-20 18:06:21,753 [WARNING]  * Debugger is active!
+2025-04-20 18:06:21,756 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:06:57,899 [INFO] BEGIN (implicit)
+2025-04-20 18:06:57,900 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:06:57,901 [INFO] [generated in 0.00208s] ()
+2025-04-20 18:06:57,903 [INFO] ROLLBACK
+2025-04-20 18:06:57,904 [INFO] 127.0.0.1 - - [20/Apr/2025 18:06:57] "GET /api/products HTTP/1.1" 200 -
+2025-04-20 18:07:24,224 [ERROR] 422 Request Validation Error: Product - [{'type': 'missing', 'loc': ('name',), 'msg': 'Field required', 'input': {}, 'url': 'https://errors.pydantic.dev/2.11/v/missing'}, {'type': 'missing', 'loc': ('amount',), 'msg': 'Field required', 'input': {}, 'url': 'https://errors.pydantic.dev/2.11/v/missing'}]
+2025-04-20 18:07:24,227 [INFO] 127.0.0.1 - - [20/Apr/2025 18:07:24] "[31m[1mPOST /api/products HTTP/1.1[0m" 422 -
+2025-04-20 18:07:44,627 [INFO] BEGIN (implicit)
+2025-04-20 18:07:44,629 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 18:07:44,630 [INFO] [generated in 0.00300s] ('peche', 20.0, 'fruit')
+2025-04-20 18:07:44,634 [INFO] COMMIT
+2025-04-20 18:07:44,640 [INFO] 127.0.0.1 - - [20/Apr/2025 18:07:44] "[35m[1mPOST /api/products HTTP/1.1[0m" 201 -
+2025-04-20 18:07:57,249 [INFO] BEGIN (implicit)
+2025-04-20 18:07:57,251 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:07:57,252 [INFO] [cached since 59.35s ago] ()
+2025-04-20 18:07:57,253 [INFO] ROLLBACK
+2025-04-20 18:07:57,255 [INFO] 127.0.0.1 - - [20/Apr/2025 18:07:57] "GET /api/products HTTP/1.1" 200 -
+2025-04-20 18:08:14,721 [INFO] BEGIN (implicit)
+2025-04-20 18:08:14,724 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-20 18:08:14,726 [INFO] [generated in 0.00383s] (68,)
+2025-04-20 18:08:14,732 [INFO] COMMIT
+2025-04-20 18:08:14,740 [INFO] 127.0.0.1 - - [20/Apr/2025 18:08:14] "POST /api/products/delete HTTP/1.1" 200 -
+2025-04-20 18:08:23,367 [INFO] BEGIN (implicit)
+2025-04-20 18:08:23,368 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:08:23,369 [INFO] [cached since 85.47s ago] ()
+2025-04-20 18:08:23,371 [INFO] ROLLBACK
+2025-04-20 18:08:23,372 [INFO] 127.0.0.1 - - [20/Apr/2025 18:08:23] "GET /api/products HTTP/1.1" 200 -
+2025-04-20 18:08:39,813 [INFO] BEGIN (implicit)
+2025-04-20 18:08:39,815 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-20 18:08:39,817 [INFO] [cached since 25.09s ago] (64,)
+2025-04-20 18:08:39,818 [INFO] COMMIT
+2025-04-20 18:08:39,820 [INFO] 127.0.0.1 - - [20/Apr/2025 18:08:39] "POST /api/products/delete HTTP/1.1" 200 -
+2025-04-20 18:08:50,859 [INFO] BEGIN (implicit)
+2025-04-20 18:08:50,861 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:08:50,861 [INFO] [cached since 113s ago] ()
+2025-04-20 18:08:50,864 [INFO] ROLLBACK
+2025-04-20 18:08:50,866 [INFO] 127.0.0.1 - - [20/Apr/2025 18:08:50] "GET /api/products HTTP/1.1" 200 -
+2025-04-20 18:09:03,793 [INFO] BEGIN (implicit)
+2025-04-20 18:09:03,794 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:09:03,795 [INFO] [cached since 125.9s ago] ()
+2025-04-20 18:09:03,797 [INFO] ROLLBACK
+2025-04-20 18:09:03,798 [INFO] 127.0.0.1 - - [20/Apr/2025 18:09:03] "GET /api/products/export HTTP/1.1" 200 -
+2025-04-20 18:09:38,931 [INFO] BEGIN (implicit)
+2025-04-20 18:09:38,934 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:09:38,936 [INFO] [generated in 0.00383s] (65,)
+2025-04-20 18:09:38,939 [INFO] ROLLBACK
+2025-04-20 18:09:38,963 [INFO] 127.0.0.1 - - [20/Apr/2025 18:09:38] "[35m[1mDELETE /api/products/65 HTTP/1.1[0m" 500 -
+2025-04-20 18:09:53,475 [INFO] BEGIN (implicit)
+2025-04-20 18:09:53,477 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:09:53,479 [INFO] [cached since 14.55s ago] (69,)
+2025-04-20 18:09:53,481 [INFO] ROLLBACK
+2025-04-20 18:09:53,486 [INFO] BEGIN (implicit)
+2025-04-20 18:09:53,487 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-20 18:09:53,488 [INFO] [cached since 98.77s ago] (69,)
+2025-04-20 18:09:53,491 [INFO] COMMIT
+2025-04-20 18:09:53,501 [INFO] 127.0.0.1 - - [20/Apr/2025 18:09:53] "DELETE /api/products/69 HTTP/1.1" 200 -
+2025-04-20 18:10:39,431 [INFO] BEGIN (implicit)
+2025-04-20 18:10:39,435 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:10:39,437 [INFO] [cached since 60.5s ago] (70,)
+2025-04-20 18:10:39,440 [INFO] ROLLBACK
+2025-04-20 18:10:39,445 [INFO] 127.0.0.1 - - [20/Apr/2025 18:10:39] "GET /api/products/70 HTTP/1.1" 200 -
+2025-04-20 18:11:11,431 [INFO] BEGIN (implicit)
+2025-04-20 18:11:11,434 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:11:11,435 [INFO] [cached since 92.5s ago] (70,)
+2025-04-20 18:11:11,436 [INFO] ROLLBACK
+2025-04-20 18:11:11,440 [INFO] BEGIN (implicit)
+2025-04-20 18:11:11,440 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-20 18:11:11,442 [INFO] [generated in 0.00188s] ('fraise', 600.0, 'fruit', 70)
+2025-04-20 18:11:11,446 [INFO] COMMIT
+2025-04-20 18:11:11,453 [INFO] 127.0.0.1 - - [20/Apr/2025 18:11:11] "PUT /api/products/70 HTTP/1.1" 200 -
+2025-04-20 18:11:19,174 [INFO] Page d'accueil demandée.
+2025-04-20 18:11:19,209 [INFO] 127.0.0.1 - - [20/Apr/2025 18:11:19] "GET / HTTP/1.1" 200 -
+2025-04-20 18:11:19,431 [INFO] 127.0.0.1 - - [20/Apr/2025 18:11:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:11:20,939 [INFO] BEGIN (implicit)
+2025-04-20 18:11:20,943 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:11:20,945 [INFO] [cached since 263s ago] ()
+2025-04-20 18:11:20,951 [INFO] ROLLBACK
+2025-04-20 18:11:20,953 [INFO] Demande de tous les produits. Nombre de produits: 5.
+2025-04-20 18:11:20,968 [INFO] 127.0.0.1 - - [20/Apr/2025 18:11:20] "GET /get_all HTTP/1.1" 200 -
+2025-04-20 18:11:21,054 [INFO] 127.0.0.1 - - [20/Apr/2025 18:11:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:28:11,857 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 18:28:12,051 [INFO]  * Restarting with stat
+2025-04-20 18:28:13,700 [WARNING]  * Debugger is active!
+2025-04-20 18:28:13,705 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:28:41,100 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 18:28:41,233 [INFO]  * Restarting with stat
+2025-04-20 18:28:42,933 [WARNING]  * Debugger is active!
+2025-04-20 18:28:42,937 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:29:17,033 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 18:29:17,149 [INFO]  * Restarting with stat
+2025-04-20 18:29:18,818 [WARNING]  * Debugger is active!
+2025-04-20 18:29:18,822 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:39:29,579 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 18:39:29,652 [INFO]  * Restarting with stat
+2025-04-20 18:39:30,529 [WARNING]  * Debugger is active!
+2025-04-20 18:39:30,531 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:40:16,514 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\api.py', reloading
+2025-04-20 18:40:16,589 [INFO]  * Restarting with stat
+2025-04-20 18:40:17,402 [WARNING]  * Debugger is active!
+2025-04-20 18:40:17,404 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:40:34,396 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:34] "GET /get HTTP/1.1" 200 -
+2025-04-20 18:40:34,443 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:35,578 [INFO] Page d'accueil demandée.
+2025-04-20 18:40:35,583 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:35] "GET / HTTP/1.1" 200 -
+2025-04-20 18:40:35,598 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:36,305 [INFO] BEGIN (implicit)
+2025-04-20 18:40:36,305 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:36,306 [INFO] [generated in 0.00154s] ()
+2025-04-20 18:40:36,307 [INFO] ROLLBACK
+2025-04-20 18:40:36,307 [INFO] Demande de tous les produits. Nombre de produits: 5.
+2025-04-20 18:40:36,311 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:36] "GET /get_all HTTP/1.1" 200 -
+2025-04-20 18:40:36,328 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:38,097 [INFO] Page d'accueil demandée.
+2025-04-20 18:40:38,099 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:38] "GET / HTTP/1.1" 200 -
+2025-04-20 18:40:38,119 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:39,049 [INFO] BEGIN (implicit)
+2025-04-20 18:40:39,050 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:39,050 [INFO] [cached since 2.746s ago] ()
+2025-04-20 18:40:39,051 [INFO] ROLLBACK
+2025-04-20 18:40:39,054 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:39] "GET /delete HTTP/1.1" 200 -
+2025-04-20 18:40:39,068 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:43,402 [INFO] BEGIN (implicit)
+2025-04-20 18:40:43,402 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:43,403 [INFO] [cached since 7.098s ago] ()
+2025-04-20 18:40:43,403 [INFO] ROLLBACK
+2025-04-20 18:40:43,405 [INFO] BEGIN (implicit)
+2025-04-20 18:40:43,405 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:40:43,405 [INFO] [generated in 0.00072s] (73,)
+2025-04-20 18:40:43,406 [INFO] ROLLBACK
+2025-04-20 18:40:43,407 [INFO] BEGIN (implicit)
+2025-04-20 18:40:43,407 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-20 18:40:43,407 [INFO] [generated in 0.00060s] (73,)
+2025-04-20 18:40:43,409 [INFO] COMMIT
+2025-04-20 18:40:43,413 [INFO] Produit 73 supprimé par admin.
+2025-04-20 18:40:43,414 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:43] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-04-20 18:40:43,516 [INFO] BEGIN (implicit)
+2025-04-20 18:40:43,517 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:43,518 [INFO] [cached since 7.213s ago] ()
+2025-04-20 18:40:43,518 [INFO] ROLLBACK
+2025-04-20 18:40:43,519 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:43] "GET /delete HTTP/1.1" 200 -
+2025-04-20 18:40:43,533 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:45,859 [INFO] BEGIN (implicit)
+2025-04-20 18:40:45,860 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:45,860 [INFO] [cached since 9.555s ago] ()
+2025-04-20 18:40:45,861 [INFO] ROLLBACK
+2025-04-20 18:40:45,862 [INFO] BEGIN (implicit)
+2025-04-20 18:40:45,862 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:40:45,863 [INFO] [cached since 2.457s ago] (72,)
+2025-04-20 18:40:45,863 [INFO] ROLLBACK
+2025-04-20 18:40:45,863 [INFO] BEGIN (implicit)
+2025-04-20 18:40:45,864 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-20 18:40:45,864 [INFO] [cached since 2.457s ago] (72,)
+2025-04-20 18:40:45,867 [INFO] COMMIT
+2025-04-20 18:40:45,869 [INFO] Produit 72 supprimé par admin.
+2025-04-20 18:40:45,869 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:45] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-04-20 18:40:45,974 [INFO] BEGIN (implicit)
+2025-04-20 18:40:45,974 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:45,975 [INFO] [cached since 9.67s ago] ()
+2025-04-20 18:40:45,975 [INFO] ROLLBACK
+2025-04-20 18:40:45,976 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:45] "GET /delete HTTP/1.1" 200 -
+2025-04-20 18:40:45,990 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:47,981 [INFO] BEGIN (implicit)
+2025-04-20 18:40:47,981 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:47,981 [INFO] [cached since 11.68s ago] ()
+2025-04-20 18:40:47,982 [INFO] ROLLBACK
+2025-04-20 18:40:47,982 [INFO] BEGIN (implicit)
+2025-04-20 18:40:47,982 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:40:47,982 [INFO] [cached since 4.578s ago] (71,)
+2025-04-20 18:40:47,984 [INFO] ROLLBACK
+2025-04-20 18:40:47,984 [INFO] BEGIN (implicit)
+2025-04-20 18:40:47,984 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-20 18:40:47,985 [INFO] [cached since 4.577s ago] (71,)
+2025-04-20 18:40:47,988 [INFO] COMMIT
+2025-04-20 18:40:47,989 [INFO] Produit 71 supprimé par admin.
+2025-04-20 18:40:47,990 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:47] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-04-20 18:40:48,087 [INFO] BEGIN (implicit)
+2025-04-20 18:40:48,087 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:48,088 [INFO] [cached since 11.78s ago] ()
+2025-04-20 18:40:48,088 [INFO] ROLLBACK
+2025-04-20 18:40:48,089 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:48] "GET /delete HTTP/1.1" 200 -
+2025-04-20 18:40:48,107 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:50,652 [INFO] BEGIN (implicit)
+2025-04-20 18:40:50,652 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:50,652 [INFO] [cached since 14.35s ago] ()
+2025-04-20 18:40:50,653 [INFO] ROLLBACK
+2025-04-20 18:40:50,654 [INFO] BEGIN (implicit)
+2025-04-20 18:40:50,654 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:40:50,654 [INFO] [cached since 7.249s ago] (70,)
+2025-04-20 18:40:50,655 [INFO] ROLLBACK
+2025-04-20 18:40:50,655 [INFO] BEGIN (implicit)
+2025-04-20 18:40:50,655 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-20 18:40:50,655 [INFO] [cached since 7.248s ago] (70,)
+2025-04-20 18:40:50,658 [INFO] COMMIT
+2025-04-20 18:40:50,660 [INFO] Produit 70 supprimé par admin.
+2025-04-20 18:40:50,661 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:50] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-04-20 18:40:50,753 [INFO] BEGIN (implicit)
+2025-04-20 18:40:50,754 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:40:50,754 [INFO] [cached since 14.45s ago] ()
+2025-04-20 18:40:50,754 [INFO] ROLLBACK
+2025-04-20 18:40:50,756 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:50] "GET /delete HTTP/1.1" 200 -
+2025-04-20 18:40:50,770 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:40:51,538 [INFO] Page d'accueil demandée.
+2025-04-20 18:40:51,539 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:51] "GET / HTTP/1.1" 200 -
+2025-04-20 18:40:51,559 [INFO] 127.0.0.1 - - [20/Apr/2025 18:40:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:41:06,846 [INFO] BEGIN (implicit)
+2025-04-20 18:41:06,847 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 18:41:06,847 [INFO] [generated in 0.00140s] ('John', 15.5, 'technology')
+2025-04-20 18:41:06,851 [INFO] COMMIT
+2025-04-20 18:41:06,854 [INFO] BEGIN (implicit)
+2025-04-20 18:41:06,855 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 18:41:06,856 [INFO] [cached since 0.0104s ago] ('Eva', 40.75, 'education')
+2025-04-20 18:41:06,857 [INFO] COMMIT
+2025-04-20 18:41:06,860 [INFO] BEGIN (implicit)
+2025-04-20 18:41:06,861 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 18:41:06,861 [INFO] [cached since 0.01543s ago] ('Paul', 22.1, 'health')
+2025-04-20 18:41:06,862 [INFO] COMMIT
+2025-04-20 18:41:06,865 [INFO] BEGIN (implicit)
+2025-04-20 18:41:06,865 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 18:41:06,866 [INFO] [cached since 0.02029s ago] ('Nina', 55.3, 'finance')
+2025-04-20 18:41:06,867 [INFO] COMMIT
+2025-04-20 18:41:06,870 [INFO] BEGIN (implicit)
+2025-04-20 18:41:06,870 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-20 18:41:06,871 [INFO] [cached since 0.02541s ago] ('Liam', 30.0, 'design')
+2025-04-20 18:41:06,871 [INFO] COMMIT
+2025-04-20 18:41:06,875 [INFO] 127.0.0.1 - - [20/Apr/2025 18:41:06] "POST /api/import/files HTTP/1.1" 200 -
+2025-04-20 18:41:15,260 [INFO] BEGIN (implicit)
+2025-04-20 18:41:15,261 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:41:15,262 [INFO] [cached since 38.96s ago] ()
+2025-04-20 18:41:15,263 [INFO] ROLLBACK
+2025-04-20 18:41:15,264 [INFO] 127.0.0.1 - - [20/Apr/2025 18:41:15] "GET /api/products HTTP/1.1" 200 -
+2025-04-20 18:42:05,413 [INFO] BEGIN (implicit)
+2025-04-20 18:42:05,413 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:42:05,414 [INFO] [generated in 0.00109s] ()
+2025-04-20 18:42:05,414 [INFO] ROLLBACK
+2025-04-20 18:44:32,165 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-20 18:44:32,165 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-20 18:44:32,167 [INFO]  * Restarting with stat
+2025-04-20 18:44:32,889 [WARNING]  * Debugger is active!
+2025-04-20 18:44:32,891 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:44:32,993 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:32] "GET /get HTTP/1.1" 200 -
+2025-04-20 18:44:33,046 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:44:44,028 [INFO] BEGIN (implicit)
+2025-04-20 18:44:44,029 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-20 18:44:44,030 [INFO] [generated in 0.00119s] (75,)
+2025-04-20 18:44:44,030 [INFO] ROLLBACK
+2025-04-20 18:44:44,031 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:44] "POST /get HTTP/1.1" 200 -
+2025-04-20 18:44:44,046 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:44:45,569 [INFO] Page d'accueil demandée.
+2025-04-20 18:44:45,573 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:45] "GET / HTTP/1.1" 200 -
+2025-04-20 18:44:45,586 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:44:46,943 [INFO] BEGIN (implicit)
+2025-04-20 18:44:46,944 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-20 18:44:46,944 [INFO] [generated in 0.00172s] ()
+2025-04-20 18:44:46,945 [INFO] ROLLBACK
+2025-04-20 18:44:46,945 [INFO] Demande de tous les produits. Nombre de produits: 6.
+2025-04-20 18:44:46,948 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:46] "GET /get_all HTTP/1.1" 200 -
+2025-04-20 18:44:46,968 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:44:48,189 [INFO] Page d'accueil demandée.
+2025-04-20 18:44:48,190 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:48] "GET / HTTP/1.1" 200 -
+2025-04-20 18:44:48,208 [INFO] 127.0.0.1 - - [20/Apr/2025 18:44:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-20 18:51:50,758 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\services.py', reloading
+2025-04-20 18:51:50,822 [INFO]  * Restarting with stat
+2025-04-20 18:51:51,620 [WARNING]  * Debugger is active!
+2025-04-20 18:51:51,622 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:56:19,663 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\services.py', reloading
+2025-04-20 18:56:19,738 [INFO]  * Restarting with stat
+2025-04-20 18:56:20,551 [WARNING]  * Debugger is active!
+2025-04-20 18:56:20,553 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:58:32,324 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 18:58:32,389 [INFO]  * Restarting with stat
+2025-04-20 18:58:33,188 [WARNING]  * Debugger is active!
+2025-04-20 18:58:33,190 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:59:06,893 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\services.py', reloading
+2025-04-20 18:59:07,081 [INFO]  * Restarting with stat
+2025-04-20 18:59:07,943 [WARNING]  * Debugger is active!
+2025-04-20 18:59:07,944 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:59:31,457 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\services.py', reloading
+2025-04-20 18:59:31,530 [INFO]  * Restarting with stat
+2025-04-20 18:59:32,340 [WARNING]  * Debugger is active!
+2025-04-20 18:59:32,344 [INFO]  * Debugger PIN: 110-811-118
+2025-04-20 18:59:57,941 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\BUT 2\\archilog_starter_cli\\archilog-0.1\\src\\archilog\\views\\web.py', reloading
+2025-04-20 18:59:58,033 [INFO]  * Restarting with stat
+2025-04-20 18:59:58,824 [WARNING]  * Debugger is active!
+2025-04-20 18:59:58,826 [INFO]  * Debugger PIN: 110-811-118

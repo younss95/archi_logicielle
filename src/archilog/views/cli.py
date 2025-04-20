@@ -26,9 +26,9 @@ def create(name: str, amount: float, category: str):
 
 @cli.command()
 @click.option("--id", required=True, type=int)
-def get(id: int):
+def get(_id: int):
     """Récupérer une entrée par ID."""
-    entry = models.get_entry(id)
+    entry = models.get_entry(_id)
     click.echo(entry)
 
 
@@ -54,16 +54,16 @@ def export_csv(csv_file):
 @click.option("-n", "--name", required=True)
 @click.option("-a", "--amount", type=float, required=True)
 @click.option("-c", "--category", default=None)
-def update(id: int, name: str, amount: float, category: str):
+def update(_id: int, name: str, amount: float, category: str):
     """Mettre à jour une entrée."""
-    models.update_entry(id, name, amount, category)
+    models.update_entry(_id, name, amount, category)
 
 
 @cli.command()
 @click.option("--id", required=True, type=int)
-def delete(id: int):
+def delete(_id: int):
     """Supprimer une entrée."""
-    models.delete_entry(id)
+    models.delete_entry(_id)
 
 
 @cli.command()

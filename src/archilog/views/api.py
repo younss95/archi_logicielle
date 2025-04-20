@@ -1,10 +1,9 @@
 from flask import Blueprint, jsonify, Response, request
-from spectree import SpecTree, SecurityScheme
+from spectree import SpecTree, SecurityScheme, BaseFile
 from pydantic import BaseModel, Field
 from archilog import models
-from archilog.services import export_to_csv
+from archilog.services import export_to_csv, import_from_csv
 from flask_httpauth import HTTPTokenAuth
-import csv
 import io
 
 
@@ -16,11 +15,18 @@ TOKENS = {
     "user": "user"
 }
 
+
+
 @auth_token.verify_token
 def verify_token(token):
     if token in TOKENS:
-        return TOKENS[token]
+        return {"role": TOKENS[token]}  # <- dictionnaire attendu
     return None
+
+
+@auth_token.get_user_roles
+def get_user_roles(user):
+    return user.get("role", [])
 
 # Blueprint API
 api_ui = Blueprint("api_ui", __name__, url_prefix="/api")
@@ -43,6 +49,9 @@ class Product(BaseModel):
 
 class DeleteRequest(BaseModel):
     product_id: int
+
+class FileUploadForm(BaseModel):
+    file: str = Field(..., description="Nom du fichier CSV à importer")
 
 # Routes API
 
@@ -101,8 +110,8 @@ def get_product_api(product_id: int):
 @auth_token.login_required
 def update_product_by_id_api(product_id: int, json: Product):
     try:
-        models.get_entry(product_id)  # Vérifie l'existence
-    except Exception:
+        models.get_entry(product_id)
+    except KeyError:  # ou une autre exception selon ton modèle
         return jsonify({"error": "Produit non trouvé"}), 404
 
     models.update_entry(product_id, json.name, json.amount, json.category)
@@ -117,43 +126,20 @@ def update_product_by_id_api(product_id: int, json: Product):
     }), 200
 
 
+class File(BaseModel):
+    file : BaseFile
 
-# Correction pour l'importation du fichier CSV
-@api_ui.route("/products/import", methods=["POST"])
-@auth_token.login_required
-def import_csv_api():
-    # Vérifie qu'un fichier a bien été envoyé dans la requête
-    if 'file' not in request.files:
-        return jsonify({"error": "Aucun fichier envoyé"}), 400
 
-    file = request.files['file']
 
-    # Vérifie que le fichier a bien un nom
-    if file.filename == '':
-        return jsonify({"error": "Nom de fichier vide"}), 400
 
-    # Vérifie que le fichier est bien au format CSV
-    if not file.filename.endswith(".csv"):
-        return jsonify({"error": "Format non supporté. Veuillez envoyer un fichier CSV."}), 400
+@api_ui.route("import/files", methods=["POST"])
+@spec.validate(tags=["api"])
+@auth_token.login_required(role="admin")
+def import_file_api():
+    uploaded_file = request.files.get("file")
+    if not uploaded_file:
+        return jsonify({"error": "Fichier manquant"}), 400
 
-    try:
-        # Lis le contenu du fichier CSV
-        stream = io.StringIO(file.stream.read().decode("utf-8"))
-        reader = csv.DictReader(stream)
-
-        count = 0
-        for row in reader:
-            name = row.get("name")
-            amount = float(row.get("amount", 0))
-            category = row.get("category") or None
-
-            # Si le nom et le montant sont valides, ajoute l'entrée
-            if name and amount > 0:
-                models.create_entry(name, amount, category)
-                count += 1
-
-        return jsonify({"message": f"{count} produits importés avec succès."}), 201
-
-    except Exception as e:
-        # En cas d'erreur, renvoie un message d'erreur
-        return jsonify({"error": f"Erreur lors de l'importation : {str(e)}"}), 500
+    filestream = io.StringIO(uploaded_file.read().decode("utf-8"))
+    import_from_csv(filestream)
+    return jsonify({"message": "Import du fichier"}), 200

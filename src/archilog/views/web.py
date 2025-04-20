@@ -5,7 +5,7 @@ from wtforms.fields.choices import SelectField
 import archilog.models as models
 from archilog.services import import_from_csv, export_to_csv
 from flask_wtf import FlaskForm
-from wtforms import StringField, DecimalField, SubmitField, FloatField, IntegerField
+from wtforms import StringField, DecimalField, SubmitField, IntegerField
 from wtforms.validators import DataRequired, Optional
 from flask import Flask
 from flask_httpauth import HTTPBasicAuth
@@ -97,12 +97,10 @@ def get_product():
     product = None
     if request.method == "POST":
         product_id = request.form["id"]
-        try:
-            product = models.get_entry(product_id)
-            logging.info(f"Produit avec ID {product_id} recherché.")
-        except Exception as e:
-            flash("Produit non trouvé. Veuillez vérifier l'ID.", "error")
-            logging.warning(f"Tentative d'accès à un produit inexistant (ID: {product_id}).")
+        product = models.get_entry(int(product_id))
+        if product is None:
+            flash("Produit non trouvé.", "error")
+            return redirect(url_for("web_ui.update_product"))
 
     return render_template("get.html", product=product)
 
@@ -124,9 +122,8 @@ def update_product():
         amount = form.amount.data
         category = form.category.data or None
 
-        try:
-            product = models.get_entry(product_id)
-        except Exception:
+        product = models.get_entry(product_id)
+        if product is None:
             flash("Produit non trouvé.", "error")
             return redirect(url_for("web_ui.update_product"))
 
@@ -178,7 +175,7 @@ def handle_internal_error(error):
 
 class CreateProductForm(FlaskForm):
     name = StringField("Nom du produit", validators=[DataRequired()], id="name-id")
-    amount = FloatField("Montant", places=2, validators=[DataRequired()], id="amount-id")
+    amount = DecimalField("Montant", places=2, validators=[DataRequired()], id="amount-id")
     category = StringField("Catégorie", validators=[Optional()], id="category-id")
     submit = SubmitField("Soumettre")  # Ajout du bouton de soumission
 

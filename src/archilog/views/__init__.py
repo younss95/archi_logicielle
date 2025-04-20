@@ -1,9 +1,8 @@
 from flask import Flask
-from spectree import SpecTree
 
 from archilog.views.web import web_ui
 from archilog.views.api import api_ui, spec
-from archilog import config
+
 
 def create_app():
     app = Flask(__name__)
