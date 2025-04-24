@@ -50,9 +50,10 @@ def get_entry(_id: int):
     with engine.connect() as conn:
         result = conn.execute(stmt).fetchone()
         if result:
-            return Entry.from_db(*result) # Retourne la ligne sous forme de tuple
+            return Entry.from_db(*result)  # Retourne la ligne sous forme de tuple
         else:
-            raise Exception("Entry not found")
+            return None  # Au lieu de lever une exception
+
 
 # Fonction pour obtenir toutes les entrées
 def get_all_entries():

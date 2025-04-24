@@ -1,3 +1,3 @@
-name,amount,category
-livre,16.0,lecture
-iphone,1000.0,portable
+id,name,amount,category
+118,ronaldo,90.0,foot
+119,messi,10.0,foot

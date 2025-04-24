@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, Response, request
+from flask import Blueprint, jsonify, Response
 from spectree import SpecTree, SecurityScheme, BaseFile
 from pydantic import BaseModel, Field
 from archilog import models
@@ -69,12 +69,6 @@ def get_all_products_api():
     products = models.get_all_entries()
     return jsonify(products)
 
-@api_ui.route("/products/delete", methods=["POST"])
-@spec.validate(json=DeleteRequest, tags=["api"])
-@auth_token.login_required
-def delete_product_api(json: DeleteRequest):
-    models.delete_entry(json.product_id)
-    return jsonify({"message": f"Produit {json.product_id} supprimé"}), 200
 
 @api_ui.route("/products/export", methods=["GET"])
 @spec.validate(tags=["api"])
@@ -135,11 +129,7 @@ class File(BaseModel):
 @api_ui.route("import/files", methods=["POST"])
 @spec.validate(tags=["api"])
 @auth_token.login_required(role="admin")
-def import_file_api():
-    uploaded_file = request.files.get("file")
-    if not uploaded_file:
-        return jsonify({"error": "Fichier manquant"}), 400
-
-    filestream = io.StringIO(uploaded_file.read().decode("utf-8"))
+def import_file_api(form : File):
+    filestream = io.StringIO(form.file.stream.read().decode("utf-8"))
     import_from_csv(filestream)
-    return jsonify({"message": "Import du fichier"}), 200
+    return jsonify({"message": "CSV importé avec succèes"}), 201

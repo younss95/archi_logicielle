@@ -9,6 +9,17 @@
 
     <h1>Importer un fichier CSV</h1>
 
+    <!-- Affichage des messages flash -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li class="alert alert-{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
     <form method="POST" action="{{ url_for('web_ui.import_csv') }}" enctype="multipart/form-data">
         <label for="csv_file">Choisir un fichier CSV :</label>
         <input type="file" id="csv_file" name="csv_file" accept=".csv" required>
@@ -16,11 +27,9 @@
         <button type="submit">Importer</button>
     </form>
 
-
     <br><br><br>
 
-
-<a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
+    <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
 
 </body>
 </html>

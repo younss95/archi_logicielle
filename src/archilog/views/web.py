@@ -1,13 +1,11 @@
 import logging
-from flask import Blueprint, render_template, request, redirect, url_for, flash, Response, abort
-from wtforms.fields.choices import SelectField
-
 import archilog.models as models
+from flask import Blueprint, render_template, request, redirect, url_for, flash, Response, abort, Flask
+from wtforms.fields.choices import SelectField
 from archilog.services import import_from_csv, export_to_csv
 from flask_wtf import FlaskForm
 from wtforms import StringField, DecimalField, SubmitField, IntegerField
 from wtforms.validators import DataRequired, Optional
-from flask import Flask
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -100,7 +98,7 @@ def get_product():
         product = models.get_entry(int(product_id))
         if product is None:
             flash("Produit non trouvé.", "error")
-            return redirect(url_for("web_ui.update_product"))
+
 
     return render_template("get.html", product=product)
 
@@ -122,6 +120,7 @@ def update_product():
         amount = form.amount.data
         category = form.category.data or None
 
+        # Utilisation de get_entry sans lever d'exception
         product = models.get_entry(product_id)
         if product is None:
             flash("Produit non trouvé.", "error")
