@@ -45,7 +45,7 @@ spec.register(api_ui)
 class Product(BaseModel):
     name: str = Field(min_length=2, max_length=50)
     amount: float = Field(gt=0)
-    category: str | None = None
+    category: str = Field(min_length=2, max_length=50)
 
 class DeleteRequest(BaseModel):
     product_id: int
